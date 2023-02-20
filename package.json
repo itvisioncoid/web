@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/itvisioncoid/web/issues"
   },
-  "homepage": "https://github.com/itvisioncoid/web#readme"
+  "homepage": "https://github.com/itvisioncoid/web#readme",
+  "dependencies": {
+    "@picocss/pico": "^1.5.7"
+  }
 }

@@ -1,5 +1,11 @@
 # Welcome to IT Vision Website Repository
-[https://itvision.co.id]()
+Deploy target: [https://itvision.co.id]()
+
+# Stacks
+* **Typescript**
+* [Svelte](https://svelte.dev)
+* [Svelte Kit](https://kit.svelte.dev)
+* [Pico CSS](https://picocss.com)
 
 # Development
 ```sh
@@ -8,9 +14,9 @@
 
 # serve local server
 > npm run dev
-# open http://localhost:3000 on your browser
+# open http://localhost:5173 on your browser
 
 # make a change on .html files
 # it will automatic reload on the browser
 ```
-Open dev page [http://localhost:3000]()
+Open dev page [http://localhost:5173]()

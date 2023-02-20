@@ -1,31 +1,52 @@
 {
-  "name": "it-vision-web",
-  "version": "0.0.2",
-  "description": "itvision.co.id",
-  "engines": {
-    "node": ">=16"
-  },
-  "type": "module",
-  "scripts": {
-    "dev": "vite --port 3000",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "npm run test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/itvisioncoid/web.git"
-  },
-  "author": "riel.cfb@gmail.com",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/itvisioncoid/web/issues"
-  },
-  "homepage": "https://github.com/itvisioncoid/web#readme",
-  "dependencies": {
-    "@picocss/pico": "^1.5.7"
-  },
-  "devDependencies": {
-    "vite": "^4.1.0"
-  }
+	"name": "itvision-website",
+	"description": "itvision.co.id",
+	"version": "0.0.3",
+	"private": true,
+	"engines": {
+		"node": ">=16"
+	  },
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"test": "playwright test",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test:unit": "vitest",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.28.1",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.5.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0",
+		"vitest": "^0.25.3"
+	},
+	"dependencies": {
+		"@picocss/pico": "^1.5.7"
+	},
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itvisioncoid/web.git"
+	},
+	"author": "riel.cfb@gmail.com",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/itvisioncoid/web/issues"
+	},
+	"homepage": "https://github.com/itvisioncoid/web#readme"
 }

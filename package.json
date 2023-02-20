@@ -1,0 +1,19 @@
+{
+  "name": "it-vision-web",
+  "version": "0.0.1",
+  "description": "itvision.co.id",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itvisioncoid/web.git"
+  },
+  "author": "riel.cfb@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itvisioncoid/web/issues"
+  },
+  "homepage": "https://github.com/itvisioncoid/web#readme"
+}

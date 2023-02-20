@@ -1,3 +1,6 @@
+<svelte:head>
+	<title>About | IT VISION</title>
+</svelte:head>
 <main class="container">
 	<div class="grid">
 		<section>

@@ -1,0 +1,83 @@
+/* Global CSS variables */
+[data-theme="dark"] {
+	--background-color: #1c1b1b;
+}
+:root {
+	--spacing-company: 3rem;
+	--font-weight: 400;
+	// --font-family: 'Ubuntu', sans-serif;
+	--font-family: 'Roboto', sans-serif;
+	--border-radius: 0;
+	/** Colors **/
+	/* --primary: #f4511e;
+	--secondary: #394046; */
+}
+
+body {
+	width: 100%;
+	margin: 0;
+}
+
+/* Typography */
+h2,
+h3,
+hgroup > :last-child {
+	font-weight: 200;
+}
+
+small {
+	color: var(--muted-color);
+}
+
+/* Header */
+.hero {
+	background-color: #394046;
+	background-image: url("/images/sascha-eremin-DNQ-M93tHmA-unsplash-3000x1000.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+header {
+	padding: var(--spacing-company) 0;
+}
+
+header hgroup > :last-child {
+	color: var(--h3-color);
+}
+
+header hgroup {
+	margin-bottom: var(--spacing-company);
+}
+
+/* Nav */
+nav {
+	[aria-label="brand"] {
+		font-family: 'Ubuntu', system-ui, sans-serif;
+	}
+}
+summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) {
+	background-color: transparent;
+	color: var(--contrast-hover);
+}
+
+/* Main */
+@media (min-width: 992px) {
+	main .grid {
+		grid-column-gap: var(--spacing-company);
+		grid-template-columns: auto 25%;
+	}
+}
+
+form.grid {
+	grid-row-gap: 0;
+}
+
+/* Aside nav */
+aside img {
+	margin-bottom: 0.25rem;
+}
+
+aside p {
+	margin-bottom: var(--spacing-company);
+	line-height: 1.25;
+}

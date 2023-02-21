@@ -3,7 +3,7 @@
 	<div class="card">
 		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
 		<div class="card-content">
-			<h2>MANAGE MAIL</h2>
+			<h1>MANAGE MAIL</h1>
 			<p>
 				<span>IT VISION Manage Mail</span> adalah layanan berkirim pesan melalui email dengan fitur premium
 				yang saling terintegrasi.
@@ -29,7 +29,7 @@
 	<!-- Router -->
 	<div class="card">
 		<div class="card-content">
-			<h2>MANAGE ROUTER</h2>
+			<h1>MANAGE ROUTER</h1>
 			<p>
 				<span>IT VISION Managed Router</span> merupakan solusi penyediaan dan pengelolaan router pelanggan
 				dengan sistem sewa yang lebih memudahkan dan lebih hemat bagi pelanggan.
@@ -53,7 +53,7 @@
 	<div class="card">
 		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
 		<div class="card-content">
-			<h2>MANAGE LAN</h2>
+			<h1>MANAGE LAN</h1>
 			<p>
 				<span>IT VISION Manage LAN</span> adalah solusi bagi penyediaan dan pengelolaan hardware LAN
 				milik pelanggan korporasi dengan mekanisme alih daya (full outsource) maupun managed only.
@@ -73,7 +73,7 @@
 	<!-- Data Center -->
 	<div class="card">
 		<div class="card-content">
-			<h2>MANAGE DATA CENTER</h2>
+			<h1>MANAGE DATA CENTER</h1>
 			<p>
 				<span>IT VISION Data Center</span> merupakan solusi bagi kebutuhan penyimpanan data perusahaan
 				yang aman dan handal dengan berbagai fitur pendukung dan infrastruktur yang lengkap.
@@ -92,7 +92,7 @@
 	<div class="card">
 		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
 		<div class="card-content">
-			<h2>MANAGE COMPUTER & HARDWARE (COMPUTER)</h2>
+			<h1>MANAGE COMPUTER & HARDWARE (COMPUTER)</h1>
 			<p><span>IT VISION COMPUTER</span> menyediakan komputer perusahaan untuk:</p>
 			<ul>
 				<li>
@@ -133,7 +133,7 @@
 	<!-- Computer & Hardware (CCTV) -->
 	<div class="card">
 		<div class="card-content">
-			<h2>MANAGE COMPUTER & HARDWARE (CCTV)</h2>
+			<h1>MANAGE COMPUTER & HARDWARE (CCTV)</h1>
 			<p>
 				<span>IT VISION Hardware</span> juga memasang CCTV (closed-circuit television) kerana dapat memberikan
 				manfaat yang signifikan bagi dunia bisnis, di antaranya:
@@ -178,7 +178,7 @@
 	<div class="card">
 		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
 		<div class="card-content">
-			<h2>INDIVIDUAL IT SOLUTION, SOFTWARE & APPS DEVELOPMENT</h2>
+			<h1>INDIVIDUAL IT SOLUTION, SOFTWARE & APPS DEVELOPMENT</h1>
 			<p>
 				<span>IT VISION</span> memberi solusi dan pengembangan perangkat lunak (App), individual yang
 				khusus mengacu pada pembuatan sistem teknologi dan aplikasi yang dibuat khusus untuk klien atau
@@ -211,5 +211,17 @@
 	.card img {
 		width: 500px;
 		height: 500px;
+		border-radius: 1rem;
+		box-shadow: 1px 1px 1rem #000;
+	}
+	@media screen and (max-width: 992px) {
+		.card {
+			display: flex;
+			flex-direction: column;
+		}
+		.card img {
+			width: 100%;
+			height: 300px;
+		}
 	}
 </style>

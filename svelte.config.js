@@ -1,8 +1,10 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 // import autoprefixer from 'autoprefixer';
-import * as path from 'path';
+// import * as path from 'path';
 import { vitePreprocess } from '@sveltejs/kit/vite';
+
+const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -17,6 +19,9 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		paths: {
+			base: dev ? '' : '/web'
+		},
 		alias: {
 			'$src/*': 'src/*'
 		}

@@ -1,29 +1,29 @@
 <script lang="ts">
-import { onDestroy, onMount } from 'svelte';
-import Typed from 'typed.js';
+	import { onDestroy, onMount } from 'svelte';
+	import Typed from 'typed.js';
 
-let typeitEl: HTMLElement;
-let typed: Typed;
+	let typeitEl: HTMLElement;
+	let typed: Typed;
 
-const startTypit = () => {
-	typed = new Typed(typeitEl, {
-		strings: ["Better Vision, Better Solution"],
-		typeSpeed: 70,
-		loop: false,
-		showCursor: false,
-		autoInsertCss: false
+	const startTypit = () => {
+		typed = new Typed(typeitEl, {
+			strings: ['Better Vision, Better Solution'],
+			typeSpeed: 70,
+			loop: false,
+			showCursor: false,
+			autoInsertCss: false
+		});
+		// typed.start();
+		return typed.destroy;
+	};
+
+	onMount(() => {
+		startTypit();
 	});
-	// typed.start();
-	return typed.destroy;
-}
 
-onMount(() => {
-	startTypit();
-});
-
-onDestroy(() => {
-	typed.destroy();
-})
+	onDestroy(() => {
+		typed.destroy();
+	});
 </script>
 
 <section class="hero" data-theme="dark">
@@ -31,7 +31,7 @@ onDestroy(() => {
 		<hgroup>
 			<h1>CV. IT VISION</h1>
 			<h2>
-				<em bind:this={typeitEl}></em>
+				<em bind:this={typeitEl} />
 			</h2>
 		</hgroup>
 		<p>

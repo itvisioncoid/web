@@ -39,3 +39,28 @@ onDestroy(() => {
 		</p>
 	</header>
 </section>
+
+<section class="services">
+	<div class="container">
+		<div class="grid">
+			<article class="service" aria-label="service">
+				<header>
+					<h4 class="contrast">Web Development</h4>
+				</header>
+				<footer>footer</footer>
+			</article>
+			<article class="service" aria-label="service">
+				<header>
+					<h4>Mobile App Development</h4>
+				</header>
+				<footer>footer</footer>
+			</article>
+			<article class="service" aria-label="service">
+				<header>
+					<h4>Security System</h4>
+				</header>
+				<footer>footer</footer>
+			</article>
+		</div>
+	</div>
+</section>

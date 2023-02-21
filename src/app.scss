@@ -6,6 +6,16 @@ $primary-500: #ff5722;
 $primary-600: #f4511e;
 $primary-700: #e64a19;
 
+// Breakpoints
+// 'null' disable the breakpoint
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
 body {
     width: 100%;
     margin: 0;

@@ -1,9 +1,12 @@
+
 /* Global CSS variables */
 [data-theme="dark"] {
 	--background-color: #1c1b1b;
 	--card-background-color: #424242;
 	--card-sectionning-background-color: #2e2e2e;
+	--side-nav-background-color: #272626;
 }
+
 :root {
 	--spacing-company: 3rem;
 	--font-weight: 400;
@@ -52,11 +55,50 @@ header hgroup {
 }
 
 /* Nav */
+.mobile-nav {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	
+	aside {
+		height: 100vh;
+		width: 50vw;
+		max-width: 15em;
+		background-color: var(--side-nav-background-color);
+		padding: 1em 1em 1em 1em;
+		box-shadow: 0px 1px 5px 3px var(--background-color);
+	}
+
+	&[aria-hidden="true"] {
+		display: none;
+	}
+}
+
 nav {
+	@if map-get($breakpoints, "sm") {
+		&[aria-label="main-nav"] {
+			ul {
+				@media (max-width: map-get($breakpoints, "md")) {
+					&.brand {
+						display: flex;
+						justify-content: space-between;
+						width: inherit;
+					}
+
+					&[aria-label="menu"] {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
 	[aria-label="brand"] {
 		font-family: 'Ubuntu', system-ui, sans-serif;
 	}
 }
+
 summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) {
 	background-color: transparent;
 	color: var(--contrast-hover);
@@ -82,4 +124,20 @@ aside img {
 aside p {
 	margin-bottom: var(--spacing-company);
 	line-height: 1.25;
+}
+
+
+/** more classess **/
+.hidden-sm {
+	@media (max-width: map-get($breakpoints, "sm")) {
+		display: none;
+	}
+}
+@if map-get($breakpoints, "sm") {
+
+	.show-sm-only {
+		@media (min-width: map-get($breakpoints, "md")) {
+			display: none;
+		}
+	}
 }

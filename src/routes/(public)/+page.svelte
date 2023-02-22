@@ -14,7 +14,7 @@
 			autoInsertCss: false
 		});
 		// typed.start();
-		return typed.destroy;
+		return typed
 	};
 
 	onMount(() => {
@@ -22,7 +22,9 @@
 	});
 
 	onDestroy(() => {
-		typed.destroy();
+		if (typed) {
+			typed.destroy();
+		}
 	});
 </script>
 

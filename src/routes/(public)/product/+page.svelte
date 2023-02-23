@@ -21,7 +21,7 @@
 			<p>
 				Bekerjasama dengan Microsoft sebagai partner teknologi terdepan di bidangnya, didukung
 				infrastruktur cloud <span>IT VISION</span> di Indonesia yang semakin mumpuni, kami memastikan
-				kolaborasi via email berjalan secara efektif, efisien, dan aman.
+				kolaborasi via email berjalan secara efektif, efisien, 
 			</p>
 		</div>
 	</div>

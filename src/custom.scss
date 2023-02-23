@@ -11,8 +11,13 @@
 	--spacing-company: 3rem;
 	--font-weight: 400;
 	// --font-family: 'Ubuntu', sans-serif;
+	--font-brand: 'Ubuntu', system-ui, sans-serif;
 	--font-family: 'Roboto', sans-serif;
-	--border-radius: 0;
+	--font-heading: "Space Grotesk", sans-serif;
+	--font-body: "Open Sans", sans-serif;
+	--font-size: 1rem;
+	--font-weight: 500;
+	--border-radius: 0.4rem;
 	/** Colors **/
 	/* --primary: #f4511e;
 	--secondary: #394046; */
@@ -21,6 +26,7 @@
 body {
 	width: 100%;
 	margin: 0;
+	font-family: var(--font-body);
 }
 
 /* Typography */
@@ -40,9 +46,16 @@ small {
 	background-image: url("/images/sascha-eremin-DNQ-M93tHmA-unsplash-3000x1000.jpg");
 	background-position: center;
 	background-size: cover;
+
+	header {
+		h2 {
+			font-family: var(--font-family);
+		}
+	}
 }
 
 header {
+
 	padding: var(--spacing-company) 0;
 }
 
@@ -76,6 +89,7 @@ header hgroup {
 }
 
 nav {
+	
 	@if map-get($breakpoints, "sm") {
 		&[aria-label="main-nav"] {
 			ul {
@@ -95,7 +109,25 @@ nav {
 	}
 
 	[aria-label="brand"] {
-		font-family: 'Ubuntu', system-ui, sans-serif;
+		font-family: var(--font-brand);
+	}
+
+	[role="navigation"] {
+		display: flex;
+		gap: 1.5rem;
+
+		a {
+			font-family: var(--font-body);
+			font-weight: var(--font-weight);
+			font-size: var(--font-size);
+			border-bottom: 1px solid transparent;
+			padding: 0;
+			color: var(--primary-inverse);
+
+			&:hover {
+				border-bottom-color: var(--primary);
+			}
+		}
 	}
 }
 

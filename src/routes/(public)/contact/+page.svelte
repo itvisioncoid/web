@@ -1,3 +1,5 @@
+<main>
+
 <div class="container form">
 	<div class="header-contact">
 		<h1>Contact With Our Support
@@ -5,7 +7,7 @@
         
 		<div class="addres-form">
 			<h4>Our Head Office Address :</h4>
-			<p>Garden View Residence,jalan Transmigrasi No.48</p>
+			<p>Garden View Residence,jalan Transmigrasi No.A8</p>
 			<p>Monjok Timur, Mataram.</p>
 		</div>
 
@@ -16,7 +18,7 @@
 
 		<div class="mail-form">
 			<h4>Mail Us :</h4>
-			<p>www.itvision.co.id</p>
+			<p>mail@itvision.co.id</p>
 		</div>
 	</div>
 
@@ -30,6 +32,8 @@
 		</form>
 	</div>
 </div>
+
+</main>
 
 <style>
 

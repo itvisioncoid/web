@@ -91,12 +91,17 @@
 		display: flex;
 		justify-content: center;
 		gap: 5rem;
-	
+		/* width: 100vw; */
+		/* overflow: hidden; */
+		/* background-color: aqua; */
+		/* color: aliceblue; */
 
 	}
 	button {
 		width: fit-content;
-	
+		/* position: absolute;
+		right: 20;
+		bottom: 0; */
 	}
 
 	.container-about {
@@ -119,10 +124,17 @@
 
 	.content-about {
 		width: 500px;
+		/* height: 250px; */
 		margin-top: 30px;
+		/* position: relative; */
 		padding: 3px;
 	}
 
+	/* .value-img{
+		display: flex;
+		justify-content: center;
+		gap: 5rem;
+	}
 
 	.value-content{
 		width: 500px;
@@ -154,6 +166,7 @@
 		.content-about,
 		.container-about {
 			width: fit-content;
+			/* height: 400px; */
 		}
 		.container {
 			display: flex;

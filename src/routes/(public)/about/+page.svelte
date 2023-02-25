@@ -1,145 +1,163 @@
-<svelte:head>
-	<title>About | IT VISION</title>
-</svelte:head>
+<main>
+	<div class="container">
+		<div class="container-about">
+			<p>about us</p>
+			<h1>A Glimpse of Us</h1>
+		</div>
 
-<main class="container">
-	<div class="grid">
-		<section>
-			<hgroup>
-				<h2>About Our Company</h2>
-				<h3>IT VISION</h3>
-			</hgroup>
-			<p class="p-company">
+		<div class="content-about">
+			<p>
 				IT VISION adalah perusahaan teknologi informasi yang berfokus pada pengembangan solusi
 				inovatif untuk membantu klien kami mencapai tujuannya. Dengan dukungan tim yang terdiri dari
 				profesional berpengalaman dan berdedikasi, IT VISION bertekad untuk memberikan layanan yang
 				berkualitas tinggi dan dukungan efektif untuk perusahaan dan klien kami.
 			</p>
-			<a href="/" class="learn-more">learn more</a>
-
-			<h3 class="v-m">Vision & Mission</h3>
-			<h4 class="visi-4">Visi</h4>
-			<p>
-				Visi kami adalah menjadi perusahaan teknologi informasi yang unggul dalam inovasi dan
-				memberikan solusi yang efektif untuk meningkatkan produktivitas dan efisiensi bisnis klien
-				kami, serta menjadi mitra teknologi terpercaya bagi perusahaan dalam mencapai kesuksesan.
-			</p>
-			<h4 class="misi-4">Misi</h4>
-			<ul>
-				<li>Menyediakan solusi teknologi yang inovatif dan berkualitas tinggi untuk klien kami.</li>
-
-				<li>
-					Mengembangkan dan menyediakan teknologi yang meningkatkan efisiensi dan produktivitas bagi
-					bisnis klien kami.
-				</li>
-
-				<li>Mempertahankan standard tinggi dalam layanan pelanggan dan dukungan teknis.</li>
-
-				<li>Menyediakan kesempatan kerja yang menantang dan menguntungkan bagi karyawan kami.</li>
-				<li>Mengembangkan dan menjaga hubungan yang kuat dengan mitra dan vendor kami</li>
-			</ul>
-		</section>
-
-		<aside>
-			<figure>
-				<h3 class="figure-heading">Our Values</h3>
-				<img
-					src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg"
-					alt="Architecture"
-					class="img-vision"
-				/>
-				<figcaption>
-					Image from <a
-						href="https://unsplash.com/photos/3Ijt7UkSBYE"
-						target="_blank"
-						rel="external, noreferrer">unsplash.com</a
-					>
-				</figcaption>
-			</figure>
-			<a href="/" aria-label="Example" on:click|preventDefault>
-				<img
-					src="/images/maarten-deckers-T5nXYXCf50I-unsplash-1500x750.jpg"
-					alt="Architecture"
-					class="img-aside"
-				/>
-			</a>
-			<p>
-				<a href="/" on:click|preventDefault>Donec sit amet</a>
-				<br />
-				<small>Class aptent taciti sociosqu ad litora torquent per conubia nostra</small>
-			</p>
-			<a href="/" aria-label="Example" on:click|preventDefault>
-				<img src="/images/daniel-von-appen-tb4heMa-ZRo-unsplash-1500-750.jpg" alt="Architecture" />
-			</a>
-			<p>
-				<a href="/" on:click|preventDefault>Suspendisse potenti</a><br />
-				<small>Proin non condimentum tortor. Donec in feugiat sapien.</small>
-			</p>
-			<a href="/" aria-label="Example" on:click|preventDefault>
-				<img src="/images/matthew-hamilton-Ru3Ap8TNcsk-unsplash-1500-750.jpg" alt="Architecture" />
-			</a>
-			<p>
-				<a href="/" on:click|preventDefault>Nullam lobortis placerat aliquam</a><br />
-				<small
-					>Maecenas vitae nibh blandit dolor commodo egestas vel eget neque. Praesent semper justo
-					orci, vel imperdiet mi auctor in.</small
-				>
-			</p>
-		</aside>
+			<div class="btn-read">
+				<button>Read More</button>
+			</div>
+		</div>
 	</div>
+
+	<article>
+		<h1>Vision & Mission IT vision Company</h1>
+		<div class="article">
+			<div class="vision">
+				<ul>
+					<li>
+						Visi kami adalah menjadi perusahaan teknologi informasi yang unggul dalam inovasi dan
+						memberikan solusi yang efektif untuk meningkatkan produktivitas dan efisiensi bisnis
+						klien kami, serta menjadi mitra teknologi terpercaya bagi perusahaan dalam mencapai
+						kesuksesan.
+					</li>
+				</ul>
+			</div>
+
+			<div class="mission">
+				<ul>
+					<li>
+						Misi Menyediakan solusi teknologi yang inovatif dan berkualitas tinggi untuk klien kami.
+					</li>
+
+					<li>
+						Mengembangkan dan menyediakan teknologi yang meningkatkan efisiensi dan produktivitas
+						bagi bisnis klien kami.
+					</li>
+
+					<li>Mempertahankan standard tinggi dalam layanan pelanggan dan dukungan teknis.</li>
+
+					<li>Menyediakan kesempatan kerja yang menantang dan menguntungkan bagi karyawan kami.</li>
+					<li>Mengembangkan dan menjaga hubungan yang kuat dengan mitra dan vendor kam</li>
+				</ul>
+			</div>
+		</div>
+	</article>
+
+	<article>
+		<h1>Our Values</h1>
+
+		<div class="value-img">
+			<div class="value-content">
+				<p>
+					Sebagai perusahaan IT, nilai dan komitmen yang kami tawarkan kepada klien kami meliputi
+					kemampuan kami dalam menyediakan solusi teknologi yang inovatif dan efektif untuk membantu
+					perusahaan mereka meningkatkan efisiensi bisnis, meningkatkan produktivitas, dan
+					meningkatkan kinerja.
+				</p>
+
+				<p>
+					Kami juga menawarkan layanan purna jual yang baik dan dukungan teknis yang responsif untuk
+					memastikan bahawa klien kami selalu dapat mengandalkan pada kami saat mereka membutuhkan
+					bantuan. Selain itu, kami juga berdedikasi untuk menyediakan solusi yang sesuai dengan
+					standar industri dan konformitas regulasi yang berlaku.
+				</p>
+			</div>
+
+			<div class="img-content">
+				<div class="grid">
+					<img class="picture" src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
+					<img class="picture-1" src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
+
+				</div>
+			</div>
+		</div>
+	</article>
 </main>
 
 <style>
+	main{
+		background-image: url("/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg");
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+		gap: 5rem;
+	
 
-	h2 {
-		font-size: 40px;
+	}
+	button {
+		width: fit-content;
+	
+	}
+
+	.container-about {
+		width: 500px;
+	}
+
+	.container-about > p {
+		color: salmon;
+	}
+
+	.btn-read {
+		display: flex;
+		justify-content: end;
+	}
+
+	.container-about > h1 {
+		margin-top: -30px;
 		font-weight: bold;
-		background-color: rgb(255, 41, 17);
-		max-width: 70%;
+	}
+
+	.content-about {
+		width: 500px;
+		margin-top: 30px;
 		padding: 3px;
-		border-radius: 10px 0 10px 0;
 	}
-	
-	
-	.p-company {
-		font-size: 40;
-		border-radius: 5px;
+
+
+	.value-content{
+		width: 500px;
+	} */
+
+	.picture{
+		border-radius: 10px;
+		cursor: pointer;
+		box-shadow: 1px 1px 10px #000;
+
 	}
+
+	.picture-1{
+		border-radius: 10px;
+		width: fit-content;
+		cursor: pointer;
+		box-shadow: 1px 1px 10px #000;
+		margin-top: 30px;
+		
+
+	}
+
+
+
 
 	
-	.learn-more {
-		background-color: #fff;
-		padding: 10px;
-		color: black;
-		border-radius: 5px;
-		text-decoration: none;
-	}
-	figure {
-		margin-top: 70px;
-	}
 
-	.figure-heading {
-		font-size: 40px;
-		font-weight: bold;
+	@media screen and (max-width: 992px) {
+		.content-about,
+		.container-about {
+			width: fit-content;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
 	}
-
-	.img-vision {
-		margin-top: 10px;
-		border-radius: 5px;
-		float: right;
-	}
-	.v-m {
-		margin-top: 100px;
-		font-size: 40px;
-		font-weight: bold;
-	}
-
-	.visi-4 {
-		margin: 0;
-	}
-
-	.misi-4 {
-		margin: 0;
-	}
-
 </style>

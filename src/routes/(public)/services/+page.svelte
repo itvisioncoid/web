@@ -16,6 +16,44 @@
 			name: 'Software & Apps Development'
 		}
 	];
+
+	const services = [
+		{
+			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
+			icon: '/icons/icons-01.svg',
+			title: 'Manage Mail'
+		},
+		{
+			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
+			icon: '/icons/icons-08.svg',
+			title: 'Manage Router'
+		},
+		{
+			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
+			icon: '/icons/icons-07.svg',
+			title: 'Manage LAN'
+		},
+		{
+			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
+			icon: '/icons/icons-06.svg',
+			title: 'Manage Data Center'
+		},
+		{
+			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
+			icon: '/icons/icons-05.svg',
+			title: 'Computer & Hardware'
+		},
+		{
+			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
+			icon: '/icons/icons-02.svg',
+			title: 'Individual IT Solution'
+		},
+		{
+			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
+			icon: '/icons/icons-02.svg',
+			title: 'Software & Apps Development'
+		}
+	];
 </script>
 
 <main>
@@ -48,6 +86,21 @@
 						<p><b>{serviceHighlight.name}</b></p>
 					</div>
 				</div>
+			{/each}
+		</div>
+	</section>
+	<section class="service-container">
+		<div>
+			<p><b>WHAT WE DO</b></p>
+			<p><b>Discover How Our Team Can Help You Achieve a Goal</b></p>
+		</div>
+		<div>
+			{#each services as service}
+				<article>
+					<img src={service.icon} alt={service.title} />
+					<p><b>{service.title}</b></p>
+					<p>{service.description}</p>
+				</article>
 			{/each}
 		</div>
 	</section>
@@ -126,6 +179,67 @@
 				p {
 					margin: 0;
 					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	.service-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		min-height: 100vh;
+		margin-top: 5rem;
+		div {
+			&:nth-child(1) {
+				p {
+					margin: 0;
+					&:nth-child(1) {
+						font-size: 14px;
+						line-height: 30px;
+						letter-spacing: 1px;
+						color: var(--primary);
+					}
+					&:nth-child(2) {
+						font-size: 50px;
+						line-height: 60px;
+					}
+				}
+			}
+			&:nth-child(2) {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				gap: 3rem;
+				margin-top: 3rem;
+				article {
+					width: 340px;
+					height: 300px;
+					margin: 0;
+					padding: 2rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					@media (max-width: map-get($breakpoints, 'lg')) {
+						width: 300px;
+					}
+					img {
+						width: 60px;
+						height: fit-content;
+					}
+					p {
+						margin: 0;
+						&:nth-child(2) {
+							font-size: 1.2rem;
+							margin: 1rem 0 0.5rem 0;
+						}
+						&:nth-child(3) {
+							line-height: 30px;
+							color: var(--secondary);
+						}
+					}
 				}
 			}
 		}

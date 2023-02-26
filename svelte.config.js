@@ -18,7 +18,9 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			strict: false
+		}),
 		paths: {
 			base: dev ? '' : '/web'
 		},

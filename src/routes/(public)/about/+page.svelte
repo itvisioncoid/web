@@ -90,9 +90,6 @@
 </main>
 
 <style>
-	.container{
-		font-family: 'Bebas Neue', cursive;
-	}
 
 	h2 {
 		font-size: 40px;

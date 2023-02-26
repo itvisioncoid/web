@@ -1,9 +1,9 @@
-<section class="container">
-	<h1>Product</h1>
+<main class="container">
+	<h1>PRODUCT</h1>
 	<div class="card">
-		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
+		<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
 		<div class="card-content">
-			<h1>MANAGE MAIL</h1>
+			<h2>MANAGE MAIL</h2>
 			<p>
 				<span>IT VISION Manage Mail</span> adalah layanan berkirim pesan melalui email dengan fitur premium
 				yang saling terintegrasi.
@@ -21,7 +21,7 @@
 			<p>
 				Bekerjasama dengan Microsoft sebagai partner teknologi terdepan di bidangnya, didukung
 				infrastruktur cloud <span>IT VISION</span> di Indonesia yang semakin mumpuni, kami memastikan
-				kolaborasi via email berjalan secara efektif, efisien, dan aman.
+				kolaborasi via email berjalan secara efektif, efisien, 
 			</p>
 		</div>
 	</div>
@@ -29,7 +29,7 @@
 	<!-- Router -->
 	<div class="card">
 		<div class="card-content">
-			<h1>MANAGE ROUTER</h1>
+			<h2>MANAGE ROUTER</h2>
 			<p>
 				<span>IT VISION Managed Router</span> merupakan solusi penyediaan dan pengelolaan router pelanggan
 				dengan sistem sewa yang lebih memudahkan dan lebih hemat bagi pelanggan.
@@ -46,14 +46,14 @@
 				akan dilakukan oleh <span>IT VISION.</span>
 			</p>
 		</div>
-		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
+		<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
 	</div>
 
 	<!-- Lan -->
 	<div class="card">
-		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
+		<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
 		<div class="card-content">
-			<h1>MANAGE LAN</h1>
+			<h2>MANAGE LAN</h2>
 			<p>
 				<span>IT VISION Manage LAN</span> adalah solusi bagi penyediaan dan pengelolaan hardware LAN
 				milik pelanggan korporasi dengan mekanisme alih daya (full outsource) maupun managed only.
@@ -73,7 +73,7 @@
 	<!-- Data Center -->
 	<div class="card">
 		<div class="card-content">
-			<h1>MANAGE DATA CENTER</h1>
+			<h2>MANAGE DATA CENTER</h2>
 			<p>
 				<span>IT VISION Data Center</span> merupakan solusi bagi kebutuhan penyimpanan data perusahaan
 				yang aman dan handal dengan berbagai fitur pendukung dan infrastruktur yang lengkap.
@@ -85,14 +85,14 @@
 				dan pelayanan penting akan terganggu.
 			</p>
 		</div>
-		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
+		<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
 	</div>
 
 	<!-- Computer & Hardware (Computer) -->
 	<div class="card">
-		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
+		<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
 		<div class="card-content">
-			<h1>MANAGE COMPUTER & HARDWARE (COMPUTER)</h1>
+			<h2>MANAGE COMPUTER & HARDWARE (COMPUTER)</h2>
 			<p><span>IT VISION COMPUTER</span> menyediakan komputer perusahaan untuk:</p>
 			<ul>
 				<li>
@@ -133,7 +133,7 @@
 	<!-- Computer & Hardware (CCTV) -->
 	<div class="card">
 		<div class="card-content">
-			<h1>MANAGE COMPUTER & HARDWARE (CCTV)</h1>
+			<h2>MANAGE COMPUTER & HARDWARE (CCTV)</h2>
 			<p>
 				<span>IT VISION Hardware</span> juga memasang CCTV (closed-circuit television) kerana dapat memberikan
 				manfaat yang signifikan bagi dunia bisnis, di antaranya:
@@ -171,14 +171,14 @@
 				</li>
 			</ul>
 		</div>
-		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
+		<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
 	</div>
 
 	<!-- Individual it Solution, Software & Apps Development -->
 	<div class="card">
-		<img src="https://source.unsplash.com/random/500x500/?tech" alt="" />
+		<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
 		<div class="card-content">
-			<h1>INDIVIDUAL IT SOLUTION, SOFTWARE & APPS DEVELOPMENT</h1>
+			<h2>INDIVIDUAL IT SOLUTION, SOFTWARE & APPS DEVELOPMENT</h2>
 			<p>
 				<span>IT VISION</span> memberi solusi dan pengembangan perangkat lunak (App), individual yang
 				khusus mengacu pada pembuatan sistem teknologi dan aplikasi yang dibuat khusus untuk klien atau
@@ -199,9 +199,12 @@
 			</p>
 		</div>
 	</div>
-</section>
+</main>
 
 <style>
+	.container h1 {
+		text-align: center;
+	}
 	.card {
 		width: 100%;
 		display: flex;

@@ -1,0 +1,8 @@
+:not([data-theme]),
+[data-theme=default] {
+    --nav-background-color: var(--primary);
+
+    .nav-container {
+        background-color: var(--nav-background-color);
+    }
+}

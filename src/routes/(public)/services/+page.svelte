@@ -17,6 +17,7 @@
 		}
 	];
 
+	// TODO: update description
 	const services = [
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',

@@ -147,6 +147,9 @@
 					&:nth-child(2) {
 						font-size: 50px;
 						line-height: 60px;
+						@media (max-width: map-get($breakpoints, 'lg')) {
+							font-size: 40px;
+						}
 					}
 				}
 			}
@@ -205,6 +208,9 @@
 					&:nth-child(2) {
 						font-size: 50px;
 						line-height: 60px;
+						@media (max-width: map-get($breakpoints, 'lg')) {
+							font-size: 40px;
+						}
 					}
 				}
 			}

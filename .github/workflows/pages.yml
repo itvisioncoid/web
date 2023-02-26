@@ -2,7 +2,7 @@ name: Build and Deploy to Pages
 
 on:
   push:
-    branches: ["staging", "main"]
+    branches: ["gh-page"]
 
   workflow_dispatch:
 
@@ -22,12 +22,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Clone Repository
       - uses: actions/checkout@v3
+      - name: Configure Pages
       - uses: actions/configure-pages@v1
         id: pages
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 18.x
           cache: 'npm'
       - run: npm ci
       - run: npm run build

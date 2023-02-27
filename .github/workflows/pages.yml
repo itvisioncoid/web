@@ -1,4 +1,4 @@
-name: Build and Deploy to Pages
+name: Build and Deploy to Github Pages
 
 on:
   push:
@@ -22,9 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone Repository
       - uses: actions/checkout@v3
-      - name: Configure Pages
       - uses: actions/configure-pages@v1
         id: pages
       - uses: actions/setup-node@v3

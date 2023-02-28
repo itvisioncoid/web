@@ -98,21 +98,23 @@
 				<p>Telepon: +62 82 340 709 041</p>
 			</div>
 		</div>
-		<div>
-			<p><b>Tautan lainnya</b></p>
-			{#each otherLinks as otherLink}
-				<div>
-					<a href={otherLink.url}>{otherLink.text}</a>
-				</div>
-			{/each}
-		</div>
-		<div>
-			<p><b>Layanan yang kami tawarkan</b></p>
-			{#each serviceLinks as serviceLink}
-				<div>
-					<a href={serviceLink.url}>{serviceLink.text}</a>
-				</div>
-			{/each}
+		<div class="grid as-footer__con-link">
+			<div>
+				<p><b>Tautan lainnya</b></p>
+				{#each otherLinks as otherLink}
+					<div>
+						<a href={otherLink.url}>{otherLink.text}</a>
+					</div>
+				{/each}
+			</div>
+			<div>
+				<p><b>Layanan yang kami tawarkan</b></p>
+				{#each serviceLinks as serviceLink}
+					<div>
+						<a href={serviceLink.url}>{serviceLink.text}</a>
+					</div>
+				{/each}
+			</div>
 		</div>
 	</div>
 </footer>
@@ -160,8 +162,12 @@
 		span {
 			color: var(--primary);
 		}
-		.grid {
-			gap: 3rem;
+		.as-footer__con-link {
+			justify-self: end;
+			width: 80%;
+			a {
+				line-height: 28px;
+			}
 		}
 		.as-footer__logo {
 			width: 250px;

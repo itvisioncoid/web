@@ -2,9 +2,9 @@
 	<div class="container">
 		<div class="title-container">
 			<h4>about us</h4>
-			<h3>A Glimpse of Us</h3>
+			<h3>Explore Us Today</h3>
 		</div>
-
+		
 		<div class="content-about">
 			<p>
 				IT VISION adalah perusahaan teknologi informasi yang berfokus pada pengembangan solusi
@@ -17,7 +17,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<article>
 		<b>Vision & Mission IT vision Company</b>
 		<br /><br />
@@ -49,6 +49,7 @@
 				</ul>
 			</div>
 		</div>
+
 
 		<div class="value-content">
 			<b>Our Values</b>
@@ -99,16 +100,17 @@
 
 <style>
 	.backround {
-		/* background-image: url('/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg'); */
+		background-image: url('/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg');
 		height: fit-content;
 	}
 	.container {
 		align-items: flext-start;
 		display: flex;
 		justify-content: space-between;
-		gap: 5rem;
+		gap: 1rem;
 		min-height: 100vh;
 		padding-top: 4rem;
+		/* min-height: 100vh; */
 	}
 	button {
 		width: fit-content;
@@ -121,11 +123,11 @@
 		align-items: start;
 	}
 
-	.title-container h3,
-	.title-container h4 {
+	/* .title-container h4,  */
+	.title-container h3{
 		color: black;
 		font-weight: bold;
-		font-size: 2.5rem;
+		font-size: 3rem;
 	}
 
 	.title-container h4 {
@@ -139,16 +141,17 @@
 	}
 
 	.content-about {
-		width: 40vw;
-		/* margin-top: 30px; */
-		/* padding: 1rem; */
+		width: 80vw;
+		margin-top: 3rem;
+		/* min-height: 100vh; */
 	}
 
 	.content-about p {
 		background-color: #fff;
-		padding: 10px;
+		padding: 1rem;
 		border-radius: 5px;
-		box-shadow: 1px 1px 5px #000;
+		box-shadow: 1px 1px 10px 0 #a19d9d;
+		font-size: 1rem;
 	}
 
 	.article {
@@ -156,6 +159,8 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+		/* margin: 0;
+		padding: 0; */
 	}
 
 	.value-content {

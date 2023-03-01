@@ -1,93 +1,119 @@
 <main>
+	<div class="container">
+		<p><b> Contact Us</b></p>
 
-<div class="container form">
-	<div class="header-contact">
-		<h1>Contact With Our Support
-            During Emergency!</h1>
-        
-		<div class="addres-form">
-			<h4>Our Head Office Address :</h4>
-			<p>Garden View Residence,jalan Transmigrasi No.A8</p>
-			<p>Monjok Timur, Mataram.</p>
+		<div class="content">
+			<h1>Get in touch with us</h1>
+			<div class="card">
+				<div class="addres">
+					<i class="fa-solid fa-location-dot" />
+					<b
+						>Our Head Office Address :<b>
+							<p>Garden View Residence,jalan Transmigrasi No.A8 Monjok Timur, Mataram.</p>
+						</b></b
+					>
+				</div>
+				<div class="phone">
+					<i class="fa-duotone fa-phone-office" />
+					<b
+						>Call For Help :<b>
+							<p>+62 82 340 709 041</p>
+						</b></b
+					>
+				</div>
+				<div class="mail">
+					<i class="fa-duotone fa-envelopes-bulk" />
+					<b
+						>Mail Us :<b>
+							<p>mail@itvision.co.id</p>
+						</b></b
+					>
+				</div>
+			</div>
 		</div>
 
-		<div class="call-form">
-			<h4>Call For Help :</h4>
-			<p>+62 82 340 709 041</p>
-		</div>
-
-		<div class="mail-form">
-			<h4>Mail Us :</h4>
-			<p>mail@itvision.co.id</p>
+		<div class="form-container">
+			<div class="content-form">
+				<div class="form">
+					<form action="">
+						<input type="text" placeholder="Your Name" required />
+						<input type="password" placeholder="Your Email" required />
+						<input type="text" placeholder="Subject" required />
+						<textarea name="" id="" cols="20" rows="5" placeholder="Type your message" />
+						<button>send message</button>
+					</form>
+				</div>
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.164269010643!2d116.12074221377988!3d-8.58019957258489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0a8b5eb06c7%3A0xc1711af9da0deb40!2sGarden%20View%20Residence!5e0!3m2!1sid!2sid!4v1677613153842!5m2!1sid!2sid"
+						width="100%"
+						height="417"
+						style="border:1px solid salmon;"
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						title="maps"
+					/>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	<div class="container-contact">
-		<form action="">
-			<input type="text" placeholder="Your Name" required />
-			<input type="password" placeholder="Your Email" required />
-			<input type="text" placeholder="Subject" required />
-			<textarea name="" id="" cols="20" rows="5" placeholder="Type your message"/>
-			<button>send message</button>
-		</form>
-	</div>
-</div>
-
 </main>
 
 <style>
-
-	.form {
-		display: flex;
-		justify-content: space-between;
+	.container b {
+		color: var(--secondary);
+	}
+	.content {
+		min-height: 100vh;
 	}
 
-    .header-contact{
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-	.header-contact > h1 {
-        font-weight: bold;
-		font-size: 30px;
-        color: #fff;
-	}
-
-	.addres-form {
-		line-height: 1px;
-        color: rgb(128, 130, 131);
-	}
-
-	.call-form {
-		line-height: 1px;
-		margin-top: 100px;
-        color: rgb(128, 130, 131);
-
-	}
-
-	.mail-form {
-		line-height: 1px;
-		margin-top: 100px;
-        color: rgb(128, 130, 131);
-
-	}
-	.container-contact {
-		padding-top: 143px;
-		max-width: 600px;
-		/* margin: auto; */
-	}
-
-	button {
-		width: 10rem;
+	.content h1 {
 		text-align: center;
-		float: right;
-		border-radius: 5px;
+		font-size: 3rem;
 		font-weight: bold;
-		padding-bottom: 20px;
 	}
 
-    button:hover{
-        opacity: 0.8;
-    }
+	.card {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 1rem;
+		text-align: center;
+	
+	}
+
+	.card .addres,
+	.card .phone,
+	.card .mail {
+		background-color: white;
+		width: 20rem;
+		height: 15rem;
+		border-radius: 2px;
+		box-shadow: 3px 3px 10px 0 rgb(148, 149, 150);
+		padding-top: 3rem;
+		cursor: pointer;
+	}
+
+	.card b,
+	.card p{
+		padding-top: 1rem;
+	}
+
+	
+
+
+	.form-container {
+		min-height: 100vh;
+		margin-top: 2rem;
+	}
+
+	
+
+	.form button {
+		opacity: 0.8;
+	}
+
+	
 
 	@media screen and (max-width: 992px) {
 		.form {

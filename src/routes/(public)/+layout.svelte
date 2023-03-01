@@ -165,8 +165,14 @@
 		.as-footer__con-link {
 			justify-self: end;
 			width: 80%;
+			div > p {
+				margin: 1rem 0;
+			}
 			a {
-				line-height: 28px;
+				line-height: 32px;
+			}
+			@media (max-width: map-get($breakpoints, 'lg')) {
+				width: 100%;
 			}
 		}
 		.as-footer__logo {

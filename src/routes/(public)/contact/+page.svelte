@@ -33,7 +33,9 @@
 		</div>
 
 		<div class="form-container">
+
 			<div class="content-form">
+				<h3>Start working with Us who can provide everything you need</h3>
 				<div class="form">
 					<form action="">
 						<input type="text" placeholder="Your Name" required />
@@ -44,6 +46,7 @@
 					</form>
 				</div>
 				<div class="map">
+					<h3>Maps</h3>
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.164269010643!2d116.12074221377988!3d-8.58019957258489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0a8b5eb06c7%3A0xc1711af9da0deb40!2sGarden%20View%20Residence!5e0!3m2!1sid!2sid!4v1677613153842!5m2!1sid!2sid"
 						width="100%"
@@ -60,8 +63,10 @@
 </main>
 
 <style>
+
+
 	.container b {
-		color: var(--secondary);
+		color: var(--primary);
 	}
 	.content {
 		min-height: 100vh;
@@ -82,6 +87,7 @@
 	
 	}
 
+
 	.card .addres,
 	.card .phone,
 	.card .mail {
@@ -89,9 +95,16 @@
 		width: 20rem;
 		height: 15rem;
 		border-radius: 2px;
-		box-shadow: 3px 3px 10px 0 rgb(148, 149, 150);
+		box-shadow: 1px 1px 5px 0 rgb(148, 149, 150);
 		padding-top: 3rem;
 		cursor: pointer;
+	}
+
+	.card .addres:hover,
+	.card .phone:hover,
+	.card .mail:hover{
+		background-color:rgb(146, 144, 144) ;
+		opacity: 0.9;
 	}
 
 	.card b,
@@ -104,13 +117,36 @@
 
 	.form-container {
 		min-height: 100vh;
-		margin-top: 2rem;
+	}
+
+	.content-form>h3{
+		text-align: center;
+		font-weight: bold;
+		margin-top: 1rem;
 	}
 
 	
 
 	.form button {
 		opacity: 0.8;
+	}
+
+
+	.map{
+		padding-top: 5rem;
+		margin-bottom: 1rem;
+	
+	}
+
+	.map>h3{
+		font-weight: bold;
+		color: whitesmoke;
+		text-align: center;
+		background-color: var(--primary);
+		width: 50%;
+		margin: auto;
+		margin-bottom: 1rem;
+		border-radius: 1rem;
 	}
 
 	

@@ -273,7 +273,7 @@ aside p {
 				padding: 2rem;
 				display: flex;
 				flex-direction: column;
-				justify-content: start;
+				justify-content: flex-start;
 				@media (max-width: map-get($breakpoints, 'lg')) {
 					width: 300px;
 				}

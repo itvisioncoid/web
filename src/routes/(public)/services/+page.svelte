@@ -1,24 +1,24 @@
 <script lang="ts">
-	const serviceHighlights = [
+	const serviceHighlights: Array<App.ServiceHighlights> = [
 		{
 			icon: '/icons/icons-05.svg',
 			image: '/images/images-10.jpg',
-			name: 'Manage Data Center'
+			title: 'Manage Data Center'
 		},
 		{
 			icon: '/icons/icons-02.svg',
 			image: '/images/images-13.jpg',
-			name: 'Individual IT Solution'
+			title: 'Individual IT Solution'
 		},
 		{
 			icon: '/icons/icons-06.svg',
 			image: '/images/images-11.jpg',
-			name: 'Software & Apps Development'
+			title: 'Software & Apps Development'
 		}
 	];
 
 	// TODO: update description
-	const services = [
+	const services: Array<App.Services> = [
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
 			icon: '/icons/icons-01.svg',
@@ -81,10 +81,10 @@
 		<div class="image-wrapper">
 			{#each serviceHighlights as serviceHighlight}
 				<div>
-					<img src={serviceHighlight.image} alt={serviceHighlight.name} />
+					<img src={serviceHighlight.image} alt={serviceHighlight.title} />
 					<div>
-						<img src={serviceHighlight.icon} alt={serviceHighlight.name} />
-						<p><b>{serviceHighlight.name}</b></p>
+						<img src={serviceHighlight.icon} alt={serviceHighlight.title} />
+						<p><b>{serviceHighlight.title}</b></p>
 					</div>
 				</div>
 			{/each}

@@ -1,18 +1,20 @@
 <script lang="ts">
+	import { IcS01, IcS02, IcS03, IcS04, IcS05, IcS06, ImS01, ImS02, ImS03 } from '$src/lib/assets';
+
 	const serviceHighlights: Array<App.ServiceHighlights> = [
 		{
-			icon: '/icons/icons-05.svg',
-			image: '/images/images-10.jpg',
+			icon: IcS03,
+			image: ImS01,
 			title: 'Manage Data Center'
 		},
 		{
-			icon: '/icons/icons-02.svg',
-			image: '/images/images-13.jpg',
+			icon: IcS02,
+			image: ImS02,
 			title: 'Individual IT Solution'
 		},
 		{
-			icon: '/icons/icons-06.svg',
-			image: '/images/images-11.jpg',
+			icon: IcS04,
+			image: ImS03,
 			title: 'Software & Apps Development'
 		}
 	];
@@ -21,37 +23,37 @@
 	const services: Array<App.Services> = [
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-01.svg',
+			icon: IcS01,
 			title: 'Manage Mail'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-08.svg',
+			icon: IcS06,
 			title: 'Manage Router'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-07.svg',
+			icon: IcS05,
 			title: 'Manage LAN'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-06.svg',
+			icon: IcS03,
 			title: 'Manage Data Center'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-05.svg',
+			icon: IcS04,
 			title: 'Computer & Hardware'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-02.svg',
+			icon: IcS02,
 			title: 'Individual IT Solution'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-02.svg',
+			icon: IcS04,
 			title: 'Software & Apps Development'
 		}
 	];
@@ -177,7 +179,7 @@
 				align-items: center;
 				padding: 1rem 0;
 				img {
-					width: 40px;
+					width: 35px;
 					height: fit-content;
 				}
 				p {

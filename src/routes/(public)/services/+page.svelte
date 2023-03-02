@@ -61,7 +61,7 @@
 
 <main>
 	<section class="service-highlight-container">
-		<div class="content-wrapper">
+		<div class="service-content-wrapper">
 			<div>
 				<p><b>CORE VALUES</b></p>
 				<p><b>Service Highlights We provide services to clients globally</b></p>
@@ -80,7 +80,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="image-wrapper">
+		<div class="service-image-wrapper">
 			{#each serviceHighlights as serviceHighlight}
 				<div>
 					<img src={serviceHighlight.image} alt={serviceHighlight.title} />
@@ -108,149 +108,3 @@
 		</div>
 	</section>
 </main>
-
-<style lang="scss">
-	/* TODO: how to import variabel `$breakpoints` from '$src/app.scss' */
-	$breakpoints: (
-		xs: 0,
-		sm: 576px,
-		md: 768px,
-		lg: 992px,
-		xl: 1200px
-	);
-
-	.service-highlight-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-	}
-	.content-wrapper {
-		display: flex;
-		gap: 2rem;
-		@media (max-width: map-get($breakpoints, 'lg')) {
-			flex-direction: column;
-		}
-		div {
-			width: 50%;
-			@media (max-width: map-get($breakpoints, 'lg')) {
-				width: 100%;
-			}
-			&:nth-child(1) {
-				p {
-					margin: 0;
-					&:nth-child(1) {
-						font-size: 14px;
-						line-height: 30px;
-						letter-spacing: 1px;
-						color: var(--primary);
-					}
-					&:nth-child(2) {
-						font-size: 50px;
-						line-height: 60px;
-						@media (max-width: map-get($breakpoints, 'lg')) {
-							font-size: 40px;
-						}
-					}
-				}
-			}
-			&:nth-child(2) {
-				line-height: 28px;
-				color: var(--secondary);
-			}
-		}
-	}
-	.image-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 1rem;
-		margin-top: 3rem;
-		div {
-			img {
-				width: 340px;
-				height: 240px;
-				border-radius: 0.25rem;
-			}
-			div {
-				display: flex;
-				gap: 1rem;
-				align-items: center;
-				padding: 1rem 0;
-				img {
-					width: 35px;
-					height: fit-content;
-				}
-				p {
-					margin: 0;
-					font-size: 1.2rem;
-				}
-			}
-		}
-	}
-
-	.service-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: start;
-		min-height: 100vh;
-		margin-top: 5rem;
-		div {
-			&:nth-child(1) {
-				p {
-					margin: 0;
-					&:nth-child(1) {
-						font-size: 14px;
-						line-height: 30px;
-						letter-spacing: 1px;
-						color: var(--primary);
-					}
-					&:nth-child(2) {
-						font-size: 50px;
-						line-height: 60px;
-						@media (max-width: map-get($breakpoints, 'lg')) {
-							font-size: 40px;
-						}
-					}
-				}
-			}
-			&:nth-child(2) {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-				gap: 3rem;
-				margin-top: 3rem;
-				article {
-					width: 340px;
-					height: 300px;
-					margin: 0;
-					padding: 2rem;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					@media (max-width: map-get($breakpoints, 'lg')) {
-						width: 300px;
-					}
-					img {
-						width: 60px;
-						height: fit-content;
-					}
-					p {
-						margin: 0;
-						&:nth-child(2) {
-							font-size: 1.2rem;
-							margin: 1rem 0 0.5rem 0;
-						}
-						&:nth-child(3) {
-							line-height: 30px;
-							color: var(--secondary);
-						}
-					}
-				}
-			}
-		}
-	}
-</style>

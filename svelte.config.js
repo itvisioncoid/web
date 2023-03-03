@@ -23,7 +23,7 @@ const config = {
 		}),
 		paths: {
 			base: dev ? '' : '/web',
-			assets: dev ? '' : '/web'
+			// assets: dev ? '' : '/web'
 		},
 		alias: {
 			'$src/*': 'src/*'

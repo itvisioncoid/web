@@ -3,7 +3,8 @@ name: Build and Deploy to Github Pages
 on:
   push:
     branches: 
-      - gh-page
+      - main
+
   pull_request:
     branches: [main]
 
@@ -28,6 +29,7 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v3
         with:
+          ref: 'gh-page'
           persist-credentials: false
       
       - uses: actions/setup-node@v3
@@ -58,10 +60,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      -name: Deploy
-       uses: JamesIves/github-pages-deploy-action@v4.3.3
-       with:
-        branch: gh-pages
-        folder: build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: build
       # - uses: actions/deploy-pages@v1
       #   id: deployment

@@ -1,219 +1,254 @@
-<div class="backround">
-	<div class="container">
-		<div class="title-container">
-			<h4>about us</h4>
-			<h3>Explore Us Today</h3>
-		</div>
-		
-		<div class="content-about">
-			<p>
-				IT VISION adalah perusahaan teknologi informasi yang berfokus pada pengembangan solusi
-				inovatif untuk membantu klien kami mencapai tujuannya. Dengan dukungan tim yang terdiri dari
-				profesional berpengalaman dan berdedikasi, IT VISION bertekad untuk memberikan layanan yang
-				berkualitas tinggi dan dukungan efektif untuk perusahaan dan klien kami.
-			</p>
-			<div class="btn-read">
-				<button>Read More</button>
+<div class="container">
+	<section class="content-header">
+		<hgroup>
+			<b style="color:salmon; font-weight:bold;">
+				about us
+				<b>
+					<h1>We are Built for Business! Explore Us Today</h1>
+		</hgroup>
+	</section>
+
+	<section class="content-aside">
+		<div class="grid">
+			<div>
+				<p>
+					IT VISION is an information technology company focused on developing innovative solutions
+					to help our client achieve their goals. With the support of a team of experienced and
+					dedicated professionals, IT VISION is determined to provide high quality services and
+					effective support for companies and clients.
+				</p>
+
+				<a href="/" role="button" style="margin-bottom: 1rem;">Discover More</a>
+			</div>
+			<div>
+				<img
+					src="https://demo.w3layouts.com/demos_new/template_demo/17-08-2021/workcore-liberty-demo_Free/666279391/web/assets/images/banner5.jpg"
+					alt=""
+				/>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<section class="visi-misi">
+		<h1>VISSION, MISSIONS & VALUES</h1>
+		<div class="grid">
+
+			<article>
+
+
+				<div>
+					<h2><i class="fas fa-user-clock primary-clr-bg" /> Visi</h2>
 	
-	<article>
-		<b>Vision & Mission IT vision Company</b>
-		<br /><br />
-		<div class="article">
-			<div class="vision">
+					<ul>
+						<li>
+							Our vision is to be a technology company superior information in innovation and provide
+							an effective solution for increase productivity and business efficiency our clients, as
+							well as being a technology partner reliable for the company in achieving success.
+						</li>
+					</ul>
+				</div>
+
+			</article>	
+			<article>
+				
+				<div>
+					<h2><i class="fas fa-laptop-house green-clr-bg" /> Misi</h2>
+					<ul>
+						<li>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam
+							necessitatibus.
+						</li>
+						<li>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam
+							necessitatibus.
+						</li>
+						<li>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam
+							necessitatibus.
+						</li>
+						<li>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam
+							necessitatibus.
+						</li>
+						<li>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laboriosam
+							necessitatibus.
+						</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<section class="our-values">
+		
+		<article>
+			<h2 style="text-align: center;"><i class="fas fa-laptop-house blue-clr-bg" /> 0ur Values</h2>
+			<div>
 				<ul>
 					<li>
-						Visi kami adalah menjadi perusahaan teknologi informasi yang unggul dalam inovasi dan
-						memberikan solusi yang efektif untuk meningkatkan produktivitas dan efisiensi bisnis
-						klien kami, serta menjadi mitra teknologi terpercaya bagi perusahaan dalam mencapai
-						kesuksesan.
+
+						<p>
+							As an IT company, value and the commitments we offer to our clients include our
+							capabilities in provide technology solutions innovative and effective for help their
+							company improve business efficiency, increase productivity, and improve the performance.
+						</p>
+		
+						<p>
+							We also offer services good after-sales and support responsive technical ensure that our
+							clients can always count on us when they need it help. In addition, we are also dedicated
+							to provide a solution comply with industry standards and compliance with applicable
+							regulations.
+						</p>
+
 					</li>
-				</ul>
-
-				<ul>
-					<li>
-						Misi Menyediakan solusi teknologi yang inovatif dan berkualitas tinggi untuk klien kami.
-					</li>
-
-					<li>
-						Mengembangkan dan menyediakan teknologi yang meningkatkan efisiensi dan produktivitas
-						bagi bisnis klien kami.
-					</li>
-
-					<li>Mempertahankan standard tinggi dalam layanan pelanggan dan dukungan teknis.</li>
-
-					<li>Menyediakan kesempatan kerja yang menantang dan menguntungkan bagi karyawan kami.</li>
-					<li>Mengembangkan dan menjaga hubungan yang kuat dengan mitra dan vendor kam</li>
 				</ul>
 			</div>
-		</div>
+		</article>
+	</section>
+
+	<section class="our-team">
+		<h1>Our Creative Team.</h1>
+
+		<div class="avatar-img">
 
 
-		<div class="value-content">
-			<b>Our Values</b>
+
 			<div class="grid">
-				<div />
-				<div>
-					<p>
-						Sebagai perusahaan IT, nilai dan komitmen yang kami tawarkan kepada klien kami meliputi
-						kemampuan kami dalam menyediakan solusi teknologi yang inovatif dan efektif untuk
-						membantu perusahaan mereka meningkatkan efisiensi bisnis, meningkatkan produktivitas,
-						dan meningkatkan kinerja.
-					</p>
-
-					<p>
-						Kami juga menawarkan layanan purna jual yang baik dan dukungan teknis yang responsif
-						untuk memastikan bahawa klien kami selalu dapat mengandalkan pada kami saat mereka
-						membutuhkan bantuan. Selain itu, kami juga berdedikasi untuk menyediakan solusi yang
-						sesuai dengan standar industri dan konformitas regulasi yang berlaku.
-					</p>
-				</div>
+	
+	
+				<article>
+					<div>
+						<img src="https://robohash.org/R9I.png?set=set2&size=150x150" alt="" />
+					</div>
+					<footer>
+						<b>Khairil Azmi</b>
+	
+						<div class="social">
+							<a href="/">
+								<span class="fab fa-facebook-f" />
+							</a>
+	
+							<a href="/">
+								<span class="fab fa-twitter" />
+							</a>
+	
+							<a href="/">
+								<span class="fab fa-instagram" />
+							</a>
+						</div>
+					</footer>
+				</article>
+	
+				<article>
+					<div>
+						<img src="https://robohash.org/PBC.png?set=set2&size=150x150" alt="" />
+					</div>
+					<footer>
+						<b>Hulaimi Haekal</b>
+						<div class="social">
+							<a href="/">
+								<span class="fab fa-facebook-f" />
+							</a>
+	
+							<a href="/">
+								<span class="fab fa-twitter" />
+							</a>
+	
+							<a href="/">
+								<span class="fab fa-instagram" />
+							</a>
+						</div>
+					</footer>
+				</article>
+	
+				<article>
+					<div>
+						<img src="https://robohash.org/R9I.png?set=set2&size=150x150" alt="" />
+					</div>
+					<footer>
+						<b>Bani Taufik</b>
+						<div class="social">
+							<a href="/">
+								<span class="fab fa-facebook-f" />
+							</a>
+	
+							<a href="/">
+								<span class="fab fa-twitter" />
+							</a>
+	
+							<a href="/">
+								<span class="fab fa-instagram" />
+							</a>
+						</div>
+					</footer>
+				</article>
+	
+				<article>
+					<div>
+						<img src="https://robohash.org/R9I.png?set=set2&size=150x150" alt="" />
+					</div>
+					<footer>
+						<b>Bani Taufik</b>
+						<div class="social">
+							<a href="/">
+								<span class="fab fa-facebook-f" />
+							</a>
+	
+							<a href="/">
+								<span class="fab fa-twitter" />
+							</a>
+	
+							<a href="/">
+								<span class="fab fa-instagram" />
+							</a>
+						</div>
+					</footer>
+				</article>
 			</div>
 		</div>
-
-		<div class="container-card">
-			<p>MEET OUR TEAM</p>
-			<h1>Our Expert People</h1>
-			<div class="card">
-				<div>
-					<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<p>Bani Taufik</p>
-				</div>
-				<div>
-					<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<p>Hulaimi Haekal</p>
-				</div>
-				<div>
-					<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<p>Bani Taufik</p>
-				</div>
-				<div>
-					<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<p>Hulaimi Haekal</p>
-				</div>
-			</div>
-		</div>
-	</article>
+	</section>
 </div>
 
 <style>
-	.backround {
-		background-image: url('/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg');
-		height: fit-content;
-	}
-	.container {
-		align-items: flext-start;
-		display: flex;
-		justify-content: space-between;
-		gap: 1rem;
-		min-height: 100vh;
-		padding-top: 4rem;
-		/* min-height: 100vh; */
-	}
-	button {
-		width: fit-content;
-	}
-
-	.title-container {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-	}
-
-	/* .title-container h4,  */
-	.title-container h3{
-		color: black;
-		font-weight: bold;
-		font-size: 3rem;
-	}
-
-	.title-container h4 {
-		color: var(--primary);
-		margin-bottom: 0;
-	}
-
-	.btn-read {
-		display: flex;
-		justify-content: end;
-	}
-
-	.content-about {
-		width: 80vw;
+	.content-header {
 		margin-top: 3rem;
-		/* min-height: 100vh; */
+	}
+	.content-header h1 {
+		font-size: bold;
+		font-size: 2.5rem;
 	}
 
-	.content-about p {
-		background-color: #fff;
+	.content-aside {
+		min-height: 100vh;
+		box-sizing: border-box;
+	}
+
+	.visi-misi {
+		min-height: 100vh;
+	}
+
+	.visi-misi h1,
+	.visi-misi h2 {
+		text-align: center;
+	}
+
+	.our-team h1 {
+		text-align: center;
+		font-size: bold;
+	}
+
+	.our-values{
+		min-height: 100vh;
+	}
+
+	.avatar-img {
+		text-align: center;
+	}
+
+	span {
 		padding: 1rem;
-		border-radius: 5px;
-		box-shadow: 1px 1px 10px 0 #a19d9d;
-		font-size: 1rem;
+		color: salmon;
 	}
 
-	.article {
-		min-height: 100vh;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		/* margin: 0;
-		padding: 0; */
-	}
-
-	.value-content {
-		min-height: 100vh;
-		line-height: 20px;
-	}
-
-	.container-card {
-		min-height: 100vh;
-	}
-	
-	.container-card p {
-		color: var(--primary);
-		text-align: center;
-	}
-	
-	.container-card h1 {
-		text-align: center;
-	}
-	
-	.card {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-self: center;
-		gap: 4rem;
-	}
-
-	.card p {
-		margin-top: 1rem;
-		padding: 1rem;
-		background-color: var(--primary);
-		color: whitesmoke;
-		text-align: center;
-		border-radius: 5px;
-		cursor: pointer;
-	}
-
-	.card img {
-		border-radius: 100%;
-		width: 200px;
-		height: 200px;
-		cursor: pointer;
-	}
-
-	@media screen and (max-width: 992px) {
-		.title-container,
-		.title-container {
-			width: fit-content;
-		}
-		.container {
-			display: flex;
-			flex-direction: column;
-		}
-	}
 </style>

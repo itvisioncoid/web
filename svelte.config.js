@@ -18,14 +18,12 @@ const config = {
 	],
 
 	kit: {
+		
 		adapter: adapter({
 			fallback: 'index.html',
 			strict: false
 		}),
-		paths: {
-			base: dev ? '' : '/web',
-			// assets: dev ? '' : '/web'
-		},
+
 		alias: {
 			'$src/*': 'src/*'
 		}

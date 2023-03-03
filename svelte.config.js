@@ -22,7 +22,8 @@ const config = {
 			strict: false
 		}),
 		paths: {
-			base: dev ? '' : '/web'
+			base: dev ? '' : '/web',
+			assets: dev ? '' : '/web'
 		},
 		alias: {
 			'$src/*': 'src/*'

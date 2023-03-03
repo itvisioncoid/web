@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
+	import { base } from "$app/paths";
 	import Typed from 'typed.js';
 
 	let typeitEl: HTMLElement;
@@ -37,7 +38,7 @@
 			</h2>
 		</hgroup>
 		<p>
-			<a href="/" role="button" on:click={(event) => event.preventDefault()}>Contact Us</a>
+			<a href="{base}" role="button" on:click={(event) => event.preventDefault()}>Contact Us</a>
 		</p>
 	</header>
 </section>

@@ -1,18 +1,20 @@
 <script lang="ts">
+	import { base } from "$app/paths";
+
 	const serviceHighlights = [
 		{
-			icon: '/icons/icons-05.svg',
-			image: '/images/images-10.jpg',
+			icon: `${base}/icons/icons-05.svg`,
+			image: `${base}/images/images-10.jpg`,
 			name: 'Manage Data Center'
 		},
 		{
-			icon: '/icons/icons-02.svg',
-			image: '/images/images-13.jpg',
+			icon: `${base}/icons/icons-02.svg`,
+			image: `${base}/images/images-13.jpg`,
 			name: 'Individual IT Solution'
 		},
 		{
-			icon: '/icons/icons-06.svg',
-			image: '/images/images-11.jpg',
+			icon: `${base}/icons/icons-06.svg`,
+			image: `${base}/images/images-11.jpg`,
 			name: 'Software & Apps Development'
 		}
 	];
@@ -21,37 +23,37 @@
 	const services = [
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-01.svg',
+			icon: `${base}/icons/icons-01.svg`,
 			title: 'Manage Mail'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-08.svg',
+			icon: `${base}/icons/icons-08.svg`,
 			title: 'Manage Router'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-07.svg',
+			icon: `${base}/icons/icons-07.svg`,
 			title: 'Manage LAN'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-06.svg',
+			icon: `${base}/icons/icons-06.svg`,
 			title: 'Manage Data Center'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-05.svg',
+			icon: `${base}/icons/icons-05.svg`,
 			title: 'Computer & Hardware'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-02.svg',
+			icon: `${base}/icons/icons-02.svg`,
 			title: 'Individual IT Solution'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: '/icons/icons-02.svg',
+			icon: `${base}/icons/icons-02.svg`,
 			title: 'Software & Apps Development'
 		}
 	];

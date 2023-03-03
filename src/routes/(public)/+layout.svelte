@@ -17,7 +17,7 @@
 	<ul>
 		<li>
 			<a href="{base}">
-				<img src="/logo.png" alt="Company logo" aria-label="Company logo" />
+				<img src="{base}/logo.png" alt="Company logo" aria-label="Company logo" />
 			</a>
 		</li>
 	</ul>

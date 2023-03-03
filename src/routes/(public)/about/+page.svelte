@@ -1,3 +1,6 @@
+<script lang="ts">
+	import { base } from "$app/paths";
+</script>
 <main>
 	<div class="container">
 		<div class="container-about">
@@ -74,8 +77,8 @@
 
 			<div class="img-content">
 				<div class="grid">
-					<img class="picture" src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<img class="picture-1" src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
+					<img class="picture" src="{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
+					<img class="picture-1" src="{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
 
 				</div>
 			</div>
@@ -85,7 +88,7 @@
 
 <style>
 	main{
-		background-image: url("/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg");
+		background-image: url("{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg");
 	}
 	.container {
 		display: flex;

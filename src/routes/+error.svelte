@@ -1,27 +1,28 @@
 <script>
+	import { base } from "$app/paths";
 	import { page } from '$app/stores';
 </script>
 
 <nav class="navbar">
 	<ul>
 		<li>
-			<a href="/" class="contrast">
+			<a href="{base}" class="contrast">
 				<strong>IT Vision</strong>
 			</a>
 		</li>
 	</ul>
 	<ul>
 		<li>
-			<a href="/product">Product</a>
+			<a href="{base}/product">Product</a>
 		</li>
 		<li>
-			<a href="/services">Services</a>
+			<a href="{base}/services">Services</a>
 		</li>
 		<li>
-			<a href="/contact">Contact Us</a>
+			<a href="{base}/contact">Contact Us</a>
 		</li>
 		<li>
-			<a href="/about">About Us</a>
+			<a href="{base}/about">About Us</a>
 		</li>
 	</ul>
 </nav>

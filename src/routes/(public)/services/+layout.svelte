@@ -14,37 +14,3 @@
 		</div>
 	</div>
 </section>
-
-<style lang="scss">
-	/* TODO: how to import variabel `$breakpoints` from '$src/app.scss' */
-	$breakpoints: (
-		xs: 0,
-		sm: 576px,
-		md: 768px,
-		lg: 992px,
-		xl: 1200px
-	);
-
-	.service-page-cta {
-		background-color: var(--primary);
-		padding: 2.5rem;
-	}
-	.container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		@media (max-width: map-get($breakpoints, 'md')) {
-			flex-direction: column;
-			align-items: start;
-			gap: 2rem;
-		}
-		p {
-			margin: 0;
-			color: #fff;
-			font-size: 28px;
-		}
-		a {
-			font-size: 17px;
-		}
-	}
-</style>

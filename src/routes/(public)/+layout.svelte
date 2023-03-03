@@ -16,7 +16,7 @@
 <nav class="container">
 	<ul>
 		<li>
-			<a href="/">
+			<a href="{base}">
 				<img src="/logo.png" alt="Company logo" aria-label="Company logo" />
 			</a>
 		</li>

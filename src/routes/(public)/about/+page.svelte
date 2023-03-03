@@ -1,10 +1,10 @@
-<main>
+<div class="backround">
 	<div class="container">
-		<div class="container-about">
-			<p>about us</p>
-			<h1>A Glimpse of Us</h1>
+		<div class="title-container">
+			<h4>about us</h4>
+			<h3>Explore Us Today</h3>
 		</div>
-
+		
 		<div class="content-about">
 			<p>
 				IT VISION adalah perusahaan teknologi informasi yang berfokus pada pengembangan solusi
@@ -17,9 +17,10 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<article>
-		<h1>Vision & Mission IT vision Company</h1>
+		<b>Vision & Mission IT vision Company</b>
+		<br /><br />
 		<div class="article">
 			<div class="vision">
 				<ul>
@@ -30,9 +31,7 @@
 						kesuksesan.
 					</li>
 				</ul>
-			</div>
 
-			<div class="mission">
 				<ul>
 					<li>
 						Misi Menyediakan solusi teknologi yang inovatif dan berkualitas tinggi untuk klien kami.
@@ -50,66 +49,90 @@
 				</ul>
 			</div>
 		</div>
-	</article>
 
-	<article>
-		<h1>Our Values</h1>
 
-		<div class="value-img">
-			<div class="value-content">
-				<p>
-					Sebagai perusahaan IT, nilai dan komitmen yang kami tawarkan kepada klien kami meliputi
-					kemampuan kami dalam menyediakan solusi teknologi yang inovatif dan efektif untuk membantu
-					perusahaan mereka meningkatkan efisiensi bisnis, meningkatkan produktivitas, dan
-					meningkatkan kinerja.
-				</p>
+		<div class="value-content">
+			<b>Our Values</b>
+			<div class="grid">
+				<div />
+				<div>
+					<p>
+						Sebagai perusahaan IT, nilai dan komitmen yang kami tawarkan kepada klien kami meliputi
+						kemampuan kami dalam menyediakan solusi teknologi yang inovatif dan efektif untuk
+						membantu perusahaan mereka meningkatkan efisiensi bisnis, meningkatkan produktivitas,
+						dan meningkatkan kinerja.
+					</p>
 
-				<p>
-					Kami juga menawarkan layanan purna jual yang baik dan dukungan teknis yang responsif untuk
-					memastikan bahawa klien kami selalu dapat mengandalkan pada kami saat mereka membutuhkan
-					bantuan. Selain itu, kami juga berdedikasi untuk menyediakan solusi yang sesuai dengan
-					standar industri dan konformitas regulasi yang berlaku.
-				</p>
+					<p>
+						Kami juga menawarkan layanan purna jual yang baik dan dukungan teknis yang responsif
+						untuk memastikan bahawa klien kami selalu dapat mengandalkan pada kami saat mereka
+						membutuhkan bantuan. Selain itu, kami juga berdedikasi untuk menyediakan solusi yang
+						sesuai dengan standar industri dan konformitas regulasi yang berlaku.
+					</p>
+				</div>
 			</div>
+		</div>
 
-			<div class="img-content">
-				<div class="grid">
-					<img class="picture" src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<img class="picture-1" src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-
+		<div class="container-card">
+			<p>MEET OUR TEAM</p>
+			<h1>Our Expert People</h1>
+			<div class="card">
+				<div>
+					<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
+					<p>Bani Taufik</p>
+				</div>
+				<div>
+					<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
+					<p>Hulaimi Haekal</p>
+				</div>
+				<div>
+					<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
+					<p>Bani Taufik</p>
+				</div>
+				<div>
+					<img src="/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
+					<p>Hulaimi Haekal</p>
 				</div>
 			</div>
 		</div>
 	</article>
-</main>
+</div>
 
 <style>
-	main{
-		background-image: url("/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg");
+	.backround {
+		background-image: url('/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg');
+		height: fit-content;
 	}
 	.container {
+		align-items: flext-start;
 		display: flex;
-		justify-content: center;
-		gap: 5rem;
-		/* width: 100vw; */
-		/* overflow: hidden; */
-		/* background-color: aqua; */
-		/* color: aliceblue; */
-
+		justify-content: space-between;
+		gap: 1rem;
+		min-height: 100vh;
+		padding-top: 4rem;
+		/* min-height: 100vh; */
 	}
 	button {
 		width: fit-content;
-		/* position: absolute;
-		right: 20;
-		bottom: 0; */
 	}
 
-	.container-about {
-		width: 500px;
+	.title-container {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
 	}
 
-	.container-about > p {
-		color: salmon;
+	/* .title-container h4,  */
+	.title-container h3{
+		color: black;
+		font-weight: bold;
+		font-size: 3rem;
+	}
+
+	.title-container h4 {
+		color: var(--primary);
+		margin-bottom: 0;
 	}
 
 	.btn-read {
@@ -117,56 +140,76 @@
 		justify-content: end;
 	}
 
-	.container-about > h1 {
-		margin-top: -30px;
-		font-weight: bold;
-	}
-
 	.content-about {
-		width: 500px;
-		/* height: 250px; */
-		margin-top: 30px;
-		/* position: relative; */
-		padding: 3px;
+		width: 80vw;
+		margin-top: 3rem;
+		/* min-height: 100vh; */
 	}
 
-	/* .value-img{
+	.content-about p {
+		background-color: #fff;
+		padding: 1rem;
+		border-radius: 5px;
+		box-shadow: 1px 1px 10px 0 #a19d9d;
+		font-size: 1rem;
+	}
+
+	.article {
+		min-height: 100vh;
 		display: flex;
-		justify-content: center;
-		gap: 5rem;
+		align-items: center;
+		flex-direction: column;
+		/* margin: 0;
+		padding: 0; */
 	}
 
-	.value-content{
-		width: 500px;
-	} */
-
-	.picture{
-		border-radius: 10px;
-		cursor: pointer;
-		box-shadow: 1px 1px 10px #000;
-
+	.value-content {
+		min-height: 100vh;
+		line-height: 20px;
 	}
 
-	.picture-1{
-		border-radius: 10px;
-		width: fit-content;
-		cursor: pointer;
-		box-shadow: 1px 1px 10px #000;
-		margin-top: 30px;
-		
-
+	.container-card {
+		min-height: 100vh;
 	}
-
-
-
-
 	
+	.container-card p {
+		color: var(--primary);
+		text-align: center;
+	}
+	
+	.container-card h1 {
+		text-align: center;
+	}
+	
+	.card {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-self: center;
+		gap: 4rem;
+	}
+
+	.card p {
+		margin-top: 1rem;
+		padding: 1rem;
+		background-color: var(--primary);
+		color: whitesmoke;
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.card img {
+		border-radius: 100%;
+		width: 200px;
+		height: 200px;
+		cursor: pointer;
+	}
 
 	@media screen and (max-width: 992px) {
-		.content-about,
-		.container-about {
+		.title-container,
+		.title-container {
 			width: fit-content;
-			/* height: 400px; */
 		}
 		.container {
 			display: flex;

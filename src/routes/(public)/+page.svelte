@@ -29,6 +29,10 @@
 	});
 </script>
 
+<svelte:head>
+	<base href="{base}" />
+</svelte:head>
+
 <section class="hero" data-theme="dark">
 	<header class="container">
 		<hgroup>

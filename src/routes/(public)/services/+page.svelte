@@ -1,59 +1,61 @@
 <script lang="ts">
 	import { base } from "$app/paths";
 
-	const serviceHighlights = [
+	import { IcS01, IcS02, IcS03, IcS04, IcS05, IcS06, ImS01, ImS02, ImS03 } from '$src/lib/assets';
+
+	const serviceHighlights: Array<App.ServiceHighlights> = [
 		{
-			icon: `${base}/icons/icons-05.svg`,
-			image: `${base}/images/images-10.jpg`,
-			name: 'Manage Data Center'
+			icon: IcS03,
+			image: ImS01,
+			title: 'Manage Data Center'
 		},
 		{
-			icon: `${base}/icons/icons-02.svg`,
-			image: `${base}/images/images-13.jpg`,
-			name: 'Individual IT Solution'
+			icon: IcS02,
+			image: ImS02,
+			title: 'Individual IT Solution'
 		},
 		{
-			icon: `${base}/icons/icons-06.svg`,
-			image: `${base}/images/images-11.jpg`,
-			name: 'Software & Apps Development'
+			icon: IcS04,
+			image: ImS03,
+			title: 'Software & Apps Development'
 		}
 	];
 
 	// TODO: update description
-	const services = [
+	const services: Array<App.Services> = [
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: `${base}/icons/icons-01.svg`,
+			icon: IcS01,
 			title: 'Manage Mail'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: `${base}/icons/icons-08.svg`,
+			icon: IcS06,
 			title: 'Manage Router'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: `${base}/icons/icons-07.svg`,
+			icon: IcS05,
 			title: 'Manage LAN'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: `${base}/icons/icons-06.svg`,
+			icon: IcS03,
 			title: 'Manage Data Center'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: `${base}/icons/icons-05.svg`,
+			icon: IcS04,
 			title: 'Computer & Hardware'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: `${base}/icons/icons-02.svg`,
+			icon: IcS02,
 			title: 'Individual IT Solution'
 		},
 		{
 			description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, harum.',
-			icon: `${base}/icons/icons-02.svg`,
+			icon: IcS04,
 			title: 'Software & Apps Development'
 		}
 	];
@@ -61,7 +63,7 @@
 
 <main>
 	<section class="service-highlight-container">
-		<div class="content-wrapper">
+		<div class="service-content-wrapper">
 			<div>
 				<p><b>CORE VALUES</b></p>
 				<p><b>Service Highlights We provide services to clients globally</b></p>
@@ -80,13 +82,13 @@
 				</p>
 			</div>
 		</div>
-		<div class="image-wrapper">
+		<div class="service-image-wrapper">
 			{#each serviceHighlights as serviceHighlight}
 				<div>
-					<img src={serviceHighlight.image} alt={serviceHighlight.name} />
+					<img src={serviceHighlight.image} alt={serviceHighlight.title} />
 					<div>
-						<img src={serviceHighlight.icon} alt={serviceHighlight.name} />
-						<p><b>{serviceHighlight.name}</b></p>
+						<img src={serviceHighlight.icon} alt={serviceHighlight.title} />
+						<p><b>{serviceHighlight.title}</b></p>
 					</div>
 				</div>
 			{/each}
@@ -108,149 +110,3 @@
 		</div>
 	</section>
 </main>
-
-<style lang="scss">
-	/* TODO: how to import variabel `$breakpoints` from '$src/app.scss' */
-	$breakpoints: (
-		xs: 0,
-		sm: 576px,
-		md: 768px,
-		lg: 992px,
-		xl: 1200px
-	);
-
-	.service-highlight-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-	}
-	.content-wrapper {
-		display: flex;
-		gap: 2rem;
-		@media (max-width: map-get($breakpoints, 'lg')) {
-			flex-direction: column;
-		}
-		div {
-			width: 50%;
-			@media (max-width: map-get($breakpoints, 'lg')) {
-				width: 100%;
-			}
-			&:nth-child(1) {
-				p {
-					margin: 0;
-					&:nth-child(1) {
-						font-size: 14px;
-						line-height: 30px;
-						letter-spacing: 1px;
-						color: var(--primary);
-					}
-					&:nth-child(2) {
-						font-size: 50px;
-						line-height: 60px;
-						@media (max-width: map-get($breakpoints, 'lg')) {
-							font-size: 40px;
-						}
-					}
-				}
-			}
-			&:nth-child(2) {
-				line-height: 28px;
-				color: var(--secondary);
-			}
-		}
-	}
-	.image-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 1rem;
-		margin-top: 3rem;
-		div {
-			img {
-				width: 340px;
-				height: 240px;
-				border-radius: 0.25rem;
-			}
-			div {
-				display: flex;
-				gap: 1rem;
-				align-items: center;
-				padding: 1rem 0;
-				img {
-					width: 40px;
-					height: fit-content;
-				}
-				p {
-					margin: 0;
-					font-size: 1.2rem;
-				}
-			}
-		}
-	}
-
-	.service-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: start;
-		min-height: 100vh;
-		margin-top: 5rem;
-		div {
-			&:nth-child(1) {
-				p {
-					margin: 0;
-					&:nth-child(1) {
-						font-size: 14px;
-						line-height: 30px;
-						letter-spacing: 1px;
-						color: var(--primary);
-					}
-					&:nth-child(2) {
-						font-size: 50px;
-						line-height: 60px;
-						@media (max-width: map-get($breakpoints, 'lg')) {
-							font-size: 40px;
-						}
-					}
-				}
-			}
-			&:nth-child(2) {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-				gap: 3rem;
-				margin-top: 3rem;
-				article {
-					width: 340px;
-					height: 300px;
-					margin: 0;
-					padding: 2rem;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					@media (max-width: map-get($breakpoints, 'lg')) {
-						width: 300px;
-					}
-					img {
-						width: 60px;
-						height: fit-content;
-					}
-					p {
-						margin: 0;
-						&:nth-child(2) {
-							font-size: 1.2rem;
-							margin: 1rem 0 0.5rem 0;
-						}
-						&:nth-child(3) {
-							line-height: 30px;
-							color: var(--secondary);
-						}
-					}
-				}
-			}
-		}
-	}
-</style>

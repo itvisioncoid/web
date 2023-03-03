@@ -13,7 +13,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -48,11 +48,17 @@ jobs:
       # - run: npm ci
       - name: Build Project
         run: npm run build
-        
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v1
+      
+      # - name: Deploy
+      #   uses: JamesIves/github-pages-deploy-action@v4.3.3
       #   with:
-      #     path: ./build
+      #     branch: gh-pages
+      #     folder: build
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./build
 
   deploy:
     runs-on: ubuntu-latest
@@ -61,10 +67,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        with:
-          branch: gh-pages
-          folder: build
-      # - uses: actions/deploy-pages@v1
-      #   id: deployment
+  #     - name: Deploy
+  #       uses: JamesIves/github-pages-deploy-action@v4.3.3
+  #       with:
+  #         branch: gh-pages
+  #         folder: build
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

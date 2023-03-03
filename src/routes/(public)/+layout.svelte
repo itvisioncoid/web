@@ -11,22 +11,22 @@
 
 	// FIXME: update base url!
 	const otherLinks = [
-		{ text: 'Blog', url: '/' },
-		{ text: 'FAQ', url: '/' },
-		{ text: 'Karier', url: '/' },
-		{ text: 'Kontak', url: '/' },
-		{ text: 'Partner', url: '/' }
+		{ text: 'Blog', url: '#blog' },
+		{ text: 'FAQ', url: '#faq' },
+		{ text: 'Karier', url: '#career' },
+		{ text: 'Kontak', url: `${base}/contact` },
+		{ text: 'Partner', url: '#partner' }
 	];
 
 	const serviceLinks = [
-		{ text: 'Kelola Email', url: '/' },
-		{ text: 'Kelola LAN', url: '/' },
-		{ text: 'Kelola Pusat Data', url: '/' },
-		{ text: 'Kelola Router', url: '/' },
-		{ text: 'Pengembangan Aplikasi', url: '/' },
-		{ text: 'Pengembangan Perangkat Lunak', url: '/' },
-		{ text: 'Perangkat keras komputer', url: '/' },
-		{ text: 'Solusi TI Individu', url: '/' }
+		{ text: 'Kelola Email', url: `${base}/services#email` },
+		{ text: 'Kelola LAN', url: `${base}/services#networking` },
+		{ text: 'Kelola Pusat Data', url: `${base}/services#datacenter` },
+		{ text: 'Kelola Router', url: `${base}/services#router` },
+		{ text: 'Pengembangan Aplikasi', url: `${base}/services#mobiledev` },
+		{ text: 'Pengembangan Perangkat Lunak', url: `${base}/services#softwaredev` },
+		{ text: 'Perangkat keras komputer', url: `${base}/services#hardware` },
+		{ text: 'Solusi TI Individu', url: `${base}/services#itsolutions` }
 	];
 </script>
 

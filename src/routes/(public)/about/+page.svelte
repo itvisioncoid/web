@@ -3,6 +3,9 @@
 </script>
 <svelte:head>
 	<title>About Us - IT Vision</title>
+	<style type="text/css">
+		--backgrond-image: url("{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg");
+	</style>
 </svelte:head>
 
 <div class="backround">
@@ -107,7 +110,7 @@
 
 <style>
 	.backround {
-		background-image: url('/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg');
+		background-image: var(--backgrond-image);
 		height: fit-content;
 	}
 	.container {

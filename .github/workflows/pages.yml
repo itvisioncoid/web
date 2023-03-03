@@ -2,7 +2,10 @@ name: Build and Deploy to Github Pages
 
 on:
   push:
-    branches: ["gh-page"]
+    branches: 
+      - gh-page
+  pull_request:
+    branches: [main]
 
   workflow_dispatch:
 
@@ -22,19 +25,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/configure-pages@v1
-        id: pages
+      - name: Clone Repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
           cache: 'npm'
-      - run: npm ci
-      - run: npm run build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./build
+
+      - name: Install Dependencies
+        run: npm install
+
+      # - name: Configure Pages
+        # uses: actions/configure-pages@v1
+        # id: pages
+      
+      # - run: npm ci
+      - name: Build Project
+        run: npm run build
+        
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v1
+      #   with:
+      #     path: ./build
 
   deploy:
     runs-on: ubuntu-latest
@@ -43,5 +58,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v1
-        id: deployment
+      -name: Deploy
+       uses: JamesIves/github-pages-deploy-action@v4.3.3
+       with:
+        branch: gh-pages
+        folder: build
+      # - uses: actions/deploy-pages@v1
+      #   id: deployment

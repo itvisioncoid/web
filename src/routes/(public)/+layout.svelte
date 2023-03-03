@@ -1,10 +1,11 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	const date = new Date();
 	const menuLists = [
-		{ text: 'Product', url: '/product' },
-		{ text: 'Services', url: '/services' },
-		{ text: 'Contact Us', url: '/contact' },
-		{ text: 'About Us', url: '/about' }
+		{ text: 'Product', url: `${base}/product` },
+		{ text: 'Services', url: `${base}/services` },
+		{ text: 'Contact Us', url: `${base}/contact` },
+		{ text: 'About Us', url: `${base}/about` }
 	];
 </script>
 
@@ -15,7 +16,7 @@
 <nav class="container">
 	<ul>
 		<li>
-			<a href="/">
+			<a href="{base}">
 				<img src="/logo.png" alt="Company logo" aria-label="Company logo" />
 			</a>
 		</li>

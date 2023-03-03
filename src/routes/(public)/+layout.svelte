@@ -86,8 +86,8 @@
 <footer class="as-footer">
 	<div class="grid">
 		<div>
-			<a href="/">
-				<img class="as-footer__logo" src="/logo.png" alt="Company logo" aria-label="Company logo" />
+			<a href="{base}">
+				<img class="as-footer__logo" src="{base}/logo.png" alt="Company logo" aria-label="Company logo" />
 			</a>
 			<div>
 				<p>
@@ -125,7 +125,7 @@
 	<div class="as-footer__boxed container">
 		<small>&copy; <span><b>CV. IT VISION</b></span> {date.getFullYear()} All rights reserved</small>
 		<!-- FIXME: update base url! -->
-		<small><a href="/">Syarat dan Ketentuan</a> &bull; <a href="/">Kebijakan Privasi</a></small>
+		<small><a href="#terms">Syarat dan Ketentuan</a> &bull; <a href="#privacy">Kebijakan Privasi</a></small>
 	</div>
 </div>
 

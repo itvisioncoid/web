@@ -104,7 +104,7 @@
 				<p><b>Tautan lainnya</b></p>
 				{#each otherLinks as otherLink}
 					<div>
-						<a href={otherLink.url}>{otherLink.text}</a>
+						<a href="{base}" data-url="{otherLink.url}">{otherLink.text}</a>
 					</div>
 				{/each}
 			</div>
@@ -112,7 +112,7 @@
 				<p><b>Layanan yang kami tawarkan</b></p>
 				{#each serviceLinks as serviceLink}
 					<div>
-						<a href={serviceLink.url}>{serviceLink.text}</a>
+						<a href="{base}" data-url="{serviceLink.url}">{serviceLink.text}</a>
 					</div>
 				{/each}
 			</div>
@@ -125,7 +125,7 @@
 	<div class="as-footer__boxed container">
 		<small>&copy; <span><b>CV. IT VISION</b></span> {date.getFullYear()} All rights reserved</small>
 		<!-- FIXME: update base url! -->
-		<small><a href="#terms">Syarat dan Ketentuan</a> &bull; <a href="#privacy">Kebijakan Privasi</a></small>
+		<small><a href="{base}">Syarat dan Ketentuan</a> &bull; <a href="{base}">Kebijakan Privasi</a></small>
 	</div>
 </div>
 

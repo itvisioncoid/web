@@ -1,60 +1,51 @@
 <div class="container">
 	<hgroup style="margin-top: 3rem;">
-			<div class="img-content">
-				<details>
-					<summary>backround</summary>
-					<img src="https://wp.w3layouts.com/hdspacedesk/wp-content/themes/hdspacedesk/assets/images/about.jpg" alt="" width="100%">
-				  </details>
-
-			
-			</div>
+		<div class="img-content">
+			<h1>CONTACT OUR TEAM</h1>
+			<p>Got any Questions?</p>
+		</div>
 	</hgroup>
 	<section class="content-contact">
 		<div class="grid">
 			<article>
-
-
 				<div class="icon-box">
 					<div class="icon">
 						<span class="fas fa-map-marker-alt primary-clr-bg" /> Company Address
-	
+
 						<p>Garden View Residence, Jalan Transmigrasi No. A8, Monjok Timur, Mataram.</p>
 					</div>
-	
+
 					<div class="icon">
 						<span class="fa fa-phone text-primary" /> Phone Number
 						<p>+62 82 340 709 041</p>
 					</div>
-	
+
 					<div class="icon">
 						<span class="far fa-envelope" /> Send Email
-						<p>www.itvision.co.id</p>
+						<p>mail@itvision.co.id</p>
 					</div>
 				</div>
 			</article>
 
 			<article>
-
-
 				<div class="form">
 					<form>
 						<label for="firstname">
 							<input type="text" id="firstname" name="firstname" placeholder="Your name" required />
 						</label>
-	
+
 						<label for="email">Email address</label>
 						<input type="email" id="email" name="email" placeholder="Email address" required />
 						<small>We'll never share your email with anyone else.</small>
-	
+
 						<label for="" />
 						<textarea name="" id="" cols="30" rows="3" />
-	
+
 						<button type="submit">Send message</button>
 					</form>
 				</div>
 			</article>
 		</div>
-
 	</section>
 
 	<section>
@@ -73,8 +64,23 @@
 </div>
 
 <style>
+	.img-content {
+		border-left: 0.2rem solid salmon;
+		padding-left: 1rem;
+	}
 
-	.icon{
+	.img-content h1 {
+		margin-bottom: 0;
+		font-size: 2rem;
+	}
+
+	.img-content p {
+		font-size: 1rem;
+		color: salmon;
+		font-weight: bold;
+	}
+
+	.icon {
 		color: salmon;
 	}
 </style>

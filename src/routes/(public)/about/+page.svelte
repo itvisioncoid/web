@@ -1,9 +1,8 @@
 <div class="container">
 	<section class="content-header">
 		<hgroup>
-			<b style="color:salmon; font-weight:bold;">
-				about us
-				<b>
+			<b style="color:salmon; font-weight:bold;"
+				>about us<b>
 					<h1>We are Built for Business! Explore Us Today</h1>
 				</b></b
 			>
@@ -70,24 +69,38 @@
 		<article>
 			<h2 style="text-align: center;">0ur Values</h2>
 
-
 			<div class="grid">
 				<div>
-					<img class="img-value" src="https://wp.w3layouts.com/hdspacedesk/wp-content/themes/hdspacedesk/assets/images/about.jpg" alt="">
+					<img
+						class="img-value"
+						src="https://wp.w3layouts.com/hdspacedesk/wp-content/themes/hdspacedesk/assets/images/about.jpg"
+						alt=""
+					/>
 				</div>
 
 				<div>
-					<img class="img-value" src="https://demo.w3layouts.com/demos_new/template_demo/29-04-2020/finance_ideas-liberty-demo_Free/719183955/web/assets/images/g3.jpg" alt="">
+					<img
+						class="img-value"
+						src="https://demo.w3layouts.com/demos_new/template_demo/29-04-2020/finance_ideas-liberty-demo_Free/719183955/web/assets/images/g3.jpg"
+						alt=""
+					/>
 				</div>
 
 				<div>
-					<img class="img-value" src="https://demo.w3layouts.com/demos_new/template_demo/29-04-2020/finance_ideas-liberty-demo_Free/719183955/web/assets/images/g9.jpg" alt="">
+					<img
+						class="img-value"
+						src="https://demo.w3layouts.com/demos_new/template_demo/29-04-2020/finance_ideas-liberty-demo_Free/719183955/web/assets/images/g9.jpg"
+						alt=""
+					/>
 				</div>
 				<div>
-					<img class="img-value" src="https://demo.w3layouts.com/demos_new/template_demo/29-04-2020/finance_ideas-liberty-demo_Free/719183955/web/assets/images/g8.jpg" alt="">
+					<img
+						class="img-value"
+						src="https://demo.w3layouts.com/demos_new/template_demo/29-04-2020/finance_ideas-liberty-demo_Free/719183955/web/assets/images/g8.jpg"
+						alt=""
+					/>
 				</div>
 			</div>
-
 
 			<div>
 				<ul>
@@ -110,7 +123,6 @@
 			</div>
 		</article>
 	</section>
-
 
 	<section class="our-team">
 		<b style="color: salmon;">Team work</b>
@@ -234,20 +246,16 @@
 		text-align: center;
 	}
 
-	.our-team{
+	.our-team {
 		text-align: center;
 		font-size: bold;
 	}
-
-
-
-	
 
 	.our-values {
 		min-height: 100vh;
 	}
 
-	.img-value{
+	.img-value {
 		margin-bottom: 5rem;
 		border-radius: 1rem;
 	}
@@ -260,12 +268,10 @@
 		border-radius: 100%;
 		border: 1px solid var(--primary);
 		background-color: var(--ins-color);
-		/* padding: 1rem; */
 	}
 
 	span {
 		padding: 1rem;
 		color: salmon;
 	}
-
 </style>

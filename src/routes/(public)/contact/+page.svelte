@@ -1,7 +1,7 @@
 <div class="container">
 	<hgroup style="margin-top: 3rem;">
 		<div class="img-content">
-			<h1>CONTACT OUR TEAM</h1>
+			<h1>GET IN TOUCH</h1>
 			<p>Got any Questions?</p>
 		</div>
 	</hgroup>
@@ -10,18 +10,23 @@
 			<article>
 				<div class="icon-box">
 					<div class="icon">
-						<span class="fas fa-map-marker-alt primary-clr-bg" /> Company Address
-
+						<h6>
+							<span class="fas fa-map-marker-alt primary-clr-bg" /> Company Address
+						</h6>
 						<p>Garden View Residence, Jalan Transmigrasi No. A8, Monjok Timur, Mataram.</p>
 					</div>
 
 					<div class="icon">
-						<span class="fa fa-phone text-primary" /> Phone Number
+						<h6>
+							<span class="fa fa-phone text-primary" /> Call Us
+						</h6>
 						<p>+62 82 340 709 041</p>
 					</div>
 
 					<div class="icon">
-						<span class="far fa-envelope" /> Send Email
+						<h6>
+							<span class="far fa-envelope" /> Email Us
+						</h6>
 						<p>mail@itvision.co.id</p>
 					</div>
 				</div>
@@ -49,6 +54,7 @@
 	</section>
 
 	<section>
+		<h3><span class="fas fa-map-marker-alt primary-clr-bg" /> Our Location</h3>
 		<div class="maps">
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.164269010643!2d116.12074221377988!3d-8.58019957258489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0a8b5eb06c7%3A0xc1711af9da0deb40!2sGarden%20View%20Residence!5e0!3m2!1sid!2sid!4v1677613153842!5m2!1sid!2sid"
@@ -80,7 +86,7 @@
 		font-weight: bold;
 	}
 
-	.icon {
+	.icon h6 {
 		color: salmon;
 	}
 </style>

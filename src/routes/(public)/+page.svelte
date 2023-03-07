@@ -37,7 +37,7 @@
 			</h2>
 		</hgroup>
 		<p>
-			<a href="/" role="button" on:click={(event) => event.preventDefault()}>Contact Us</a>
+			<a href="/contact" role="button">Contact Us</a>
 		</p>
 	</header>
 </section>

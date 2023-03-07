@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from "$app/paths";
 	const date = new Date();
+	let isDark: boolean;
 
 	const menuLists = [
 		{ text: 'Product', url: `${base}/product` },
@@ -28,6 +29,17 @@
 		{ text: 'Perangkat keras komputer', url: '/' },
 		{ text: 'Solusi TI Individu', url: '/' }
 	];
+
+	function toggleDarkMode() {
+		const html: HTMLHtmlElement | null = document.querySelector('html');
+		if (html?.getAttribute('data-theme') == 'dark') {
+			html.setAttribute('data-theme', 'light');
+			isDark = false;
+		} else {
+			html && html.setAttribute('data-theme', 'dark');
+			isDark = true;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -37,7 +49,7 @@
 <nav class="container">
 	<ul>
 		<li>
-			<a href="{base}">
+			<a href="{base ? base : '/'}" data-href="{base ? base : '/'}">
 				<img src="/logo.png" alt="Company logo" aria-label="Company logo" />
 			</a>
 		</li>
@@ -48,10 +60,15 @@
 				<a href={menu.url}>{menu.text}</a>
 			</li>
 		{/each}
+		<li>
+			<button on:click={toggleDarkMode} class="outline secondary py-1 px-2 outline-0 outline-transparent border-none active:border-none active:outline-none active:shadow-none focus:border-none focus:outline-none focus:shadow-none">
+				<span class="fa-solid fa-circle-half-stroke" />
+			</button>
+		</li>
 	</ul>
 	<ul class="show-sm-only">
 		<li role="list" dir="rtl">
-			<button aria-haspopup="listbox">
+			<button class="outline" aria-label="mobilenav-toggler" aria-haspopup="listbox">
 				<svg
 					aria-hidden="true"
 					focusable="false"
@@ -76,6 +93,11 @@
 						<a href={menu.url}>{menu.text}</a>
 					</li>
 				{/each}
+				<li>
+					<button on:click={toggleDarkMode} class="outline secondary py-1 px-2 outline-0 outline-transparent border-none active:border-none active:outline-none active:shadow-none focus:border-none focus:outline-none">
+						<span class="fa-solid fa-circle-half-stroke" />
+					</button>
+				</li>
 			</ul>
 		</li>
 	</ul>
@@ -157,6 +179,22 @@
 		@media (min-width: map-get($breakpoints, 'sm')) {
 			display: none;
 		}
+	}
+
+	button[aria-label='mobilenav-toggler'] {
+		--form-element-spacing-vertical: 0.2rem;
+		--form-element-spacing-horizontal: 0.6rem;
+		outline-style: none;
+
+		&:focus + ul[role=listbox],
+		&:active + ul[role=listbox],
+		&:focus-within + ul[role=listbox] {
+			display: flex;
+		}
+	}
+
+	ul[role=list]:focus-within + ul[role=listbox] ~ ul[role=listbox]{
+		display: flex;
 	}
 
 	.as-footer {

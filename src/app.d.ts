@@ -18,6 +18,19 @@ declare global {
 			title: string;
 		}
 
+		interface Team {
+			name: string;
+			nickname: string;
+			department?: string;
+			picture?: string;
+			quotes?: string;
+			email: string;
+			urls?: Array<Record<{
+				icon: string,
+				url: string
+			}>>
+		}
+
 		// interface Locals {}
 		// interface PageData {}
 		// interface Platform {}

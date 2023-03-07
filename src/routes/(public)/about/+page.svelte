@@ -1,229 +1,204 @@
 <script lang="ts">
-	import { base } from "$app/paths";
+import type { PageData } from './$types';
+
+import Image from '$lib/assets/team-hands.jpg?aspect=16:9&width=600&position=center&fit=cover&format=webp&quality=40;50;60;72;80;&picture';
+
+export let data: PageData;
+
+export let Teams: App.Team[] = data.teams;
 </script>
-<svelte:head>
-	<title>About Us - IT Vision</title>
-	<style type="text/css">
-		--backgrond-image: url("{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg");
-	</style>
-</svelte:head>
 
-<div class="backround">
-	<div class="container">
-		<div class="title-container">
-			<h4>about us</h4>
-			<h3>Explore Us Today</h3>
-		</div>
-		
-		<div class="content-about">
-			<p>
-				IT VISION adalah perusahaan teknologi informasi yang berfokus pada pengembangan solusi
-				inovatif untuk membantu klien kami mencapai tujuannya. Dengan dukungan tim yang terdiri dari
-				profesional berpengalaman dan berdedikasi, IT VISION bertekad untuk memberikan layanan yang
-				berkualitas tinggi dan dukungan efektif untuk perusahaan dan klien kami.
-			</p>
-			<div class="btn-read">
-				<button>Read More</button>
+<div class="container">
+	<section class="content-header">
+		<hgroup>
+			<h3>about us<h3>
+			<h2>We are Built for Business! Explore Us Today</h2>
+		</hgroup>
+	</section>
+
+	<section class="content-aside">
+		<div class="flex gap-4 flex-col-reverse sm:flex-row">
+			<div class="basis-full sm:basis-4/6">
+				<p>
+					IT VISION is an information technology company focused on developing innovative solutions
+					to help our client achieve their goals. With the support of a team of experienced and
+					dedicated professionals, IT VISION is determined to provide high quality services and
+					effective support for companies and clients.
+				</p>
+
+				<a href="/contact" role="button">Get in touch</a>
+			</div>
+			<div class="mt-4 sm:m-0">
+				<picture>
+					{#each Object.entries(Image.sources) as [format, images]}
+					<source srcset="{images.map((i) => `${i.src}`).join(', ')}" type="image/{format}" />
+					{/each}
+					<img src="{Image.fallback.src}" alt="IT VISION TEAMWORKS" class="max-w-full" draggable="false" />
+				</picture>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<section class="visi-misi">
+		<h2>Our Vission, Mission & Values</h2>
+		<div class="grids flex flex-col sm:flex-row gap-2 sm:gap-4">
+			<article class="vision-mission sm:basis-full">
+				<div>
+					<h3>Our Vision</h3>
+					<p>
+							Our vision is to be a technology company superior information in innovation and
+							provide an effective solution for increase productivity and business efficiency our
+							clients, as well as being a technology partner reliable for the company in achieving
+							success.
+					</p>
+				</div>
+				<div>
+					<h3>Our Missions</h3>
+					<ul>
+						<li>Providing innovative and technological solutions high quality for our clients.</li>
+						<li>
+							Develop and provide technology that increase efficiency and productivity for our
+							client's business
+						</li>
+						<li>Maintaining high standards in service customer and technical support.</li>
+						<li>Provides challenging job opportunities and profitable for our employees.</li>
+						<li>Develop and maintain a relationship strong with our partners and vendors</li>
+					</ul>
+				</div>
+			</article>
+			<article class="values">
+				<h3>Our Values</h3>
+				<p>
+					As an IT company, value and the commitments we offer to our clients include our
+					capabilities in provide technology solutions innovative and effective for help their
+					company improve business efficiency, increase productivity, and improve the
+					performance.
+				</p>
+
+				<p>
+					We also offer services good after-sales and support responsive technical ensure that
+					our clients can always count on us when they need it help. In addition, we are also
+					dedicated to provide a solution comply with industry standards and compliance with
+					applicable regulations.
+				</p>
+			</article>
+		</div>
+	</section>
+
+	<section class="teams">
+		<hgroup>
+			<h5>
+				Work Teams
+			</h5>
+			<h3>Meet Our Creative Teams.</h3>
+		</hgroup>
+
+		<div class="team-lists gap-4 flex-col w-full sm:flex-row sm:justify-center sm:flex-wrap sm:content-start">
+				{#each Teams as team}
+				<div class="team sm:w-1/4">
+					<article>
+						<img class="avatar" alt="{team.nickname}" src="{team.picture ? team.picture : `https://i.pravatar.cc/150?u=${team.email}` }" />
+						<footer>
+							<h3>{team.name}</h3>
+							<div class="social">
+								<a href="about">
+									<span class="fa-brands fa-square-github" />
+								</a>
 	
-	<article>
-		<b>Vision & Mission IT vision Company</b>
-		<br /><br />
-		<div class="article">
-			<div class="vision">
-				<ul>
-					<li>
-						Visi kami adalah menjadi perusahaan teknologi informasi yang unggul dalam inovasi dan
-						memberikan solusi yang efektif untuk meningkatkan produktivitas dan efisiensi bisnis
-						klien kami, serta menjadi mitra teknologi terpercaya bagi perusahaan dalam mencapai
-						kesuksesan.
-					</li>
-				</ul>
-
-				<ul>
-					<li>
-						Misi Menyediakan solusi teknologi yang inovatif dan berkualitas tinggi untuk klien kami.
-					</li>
-
-					<li>
-						Mengembangkan dan menyediakan teknologi yang meningkatkan efisiensi dan produktivitas
-						bagi bisnis klien kami.
-					</li>
-
-					<li>Mempertahankan standard tinggi dalam layanan pelanggan dan dukungan teknis.</li>
-
-					<li>Menyediakan kesempatan kerja yang menantang dan menguntungkan bagi karyawan kami.</li>
-					<li>Mengembangkan dan menjaga hubungan yang kuat dengan mitra dan vendor kam</li>
-				</ul>
-			</div>
+								<a href="about">
+									<span class="fa-solid fa-globe" />
+								</a>
+	
+								<a href="about">
+									<span class="fab fa-instagram" />
+								</a>
+							</div>
+						</footer>
+					</article>
+				</div>
+				{/each}
 		</div>
-
-
-		<div class="value-content">
-			<b>Our Values</b>
-			<div class="grid">
-				<div />
-				<div>
-					<p>
-						Sebagai perusahaan IT, nilai dan komitmen yang kami tawarkan kepada klien kami meliputi
-						kemampuan kami dalam menyediakan solusi teknologi yang inovatif dan efektif untuk
-						membantu perusahaan mereka meningkatkan efisiensi bisnis, meningkatkan produktivitas,
-						dan meningkatkan kinerja.
-					</p>
-
-					<p>
-						Kami juga menawarkan layanan purna jual yang baik dan dukungan teknis yang responsif
-						untuk memastikan bahawa klien kami selalu dapat mengandalkan pada kami saat mereka
-						membutuhkan bantuan. Selain itu, kami juga berdedikasi untuk menyediakan solusi yang
-						sesuai dengan standar industri dan konformitas regulasi yang berlaku.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="container-card">
-			<p>MEET OUR TEAM</p>
-			<h1>Our Expert People</h1>
-			<div class="card">
-				<div>
-					<img src="{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<p>Bani Taufik</p>
-				</div>
-				<div>
-					<img src="{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<p>Hulaimi Haekal</p>
-				</div>
-				<div>
-					<img src="{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<p>Bani Taufik</p>
-				</div>
-				<div>
-					<img src="{base}/images/ashim-d-silva-3Ijt7UkSBYE-unsplash-1500x750.jpg" alt="" />
-					<p>Hulaimi Haekal</p>
-				</div>
-			</div>
-		</div>
-	</article>
+	</section>
 </div>
 
-<style>
-	.backround {
-		background-image: var(--backgrond-image);
-		height: fit-content;
-	}
-	.container {
-		align-items: flext-start;
-		display: flex;
-		justify-content: space-between;
-		gap: 1rem;
-		min-height: 100vh;
-		padding-top: 4rem;
-		/* min-height: 100vh; */
-	}
-	button {
-		width: fit-content;
-	}
-
-	.title-container {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-	}
-
-	/* .title-container h4,  */
-	.title-container h3{
-		color: black;
-		font-weight: bold;
-		font-size: 3rem;
-	}
-
-	.title-container h4 {
-		color: var(--primary);
-		margin-bottom: 0;
-	}
-
-	.btn-read {
-		display: flex;
-		justify-content: end;
-	}
-
-	.content-about {
-		width: 80vw;
+<style lang="postcss">
+	.content-header {
 		margin-top: 3rem;
-		/* min-height: 100vh; */
+	}
+	.content-header h2 {
+		font-size: bold;
+		font-size: 2.5rem;
 	}
 
-	.content-about p {
-		background-color: #fff;
-		padding: 1rem;
-		border-radius: 5px;
-		box-shadow: 1px 1px 10px 0 #a19d9d;
-		font-size: 1rem;
+	.content-aside {
+		/* min-height: 80vh; */
+		box-sizing: border-box;
 	}
 
-	.article {
-		min-height: 100vh;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		/* margin: 0;
-		padding: 0; */
-	}
-
-	.value-content {
-		min-height: 100vh;
-		line-height: 20px;
-	}
-
-	.container-card {
-		min-height: 100vh;
-	}
-	
-	.container-card p {
-		color: var(--primary);
-		text-align: center;
-	}
-	
-	.container-card h1 {
-		text-align: center;
-	}
-	
-	.card {
-		display: flex;
+	.visi-misi .grids {
+		--grid-spacing-vertical: 1rem;
+		/* display: flex;
+		gap: 1rem;
+		align-items: flex-start;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-self: center;
-		gap: 4rem;
+		flex-direction: row; */
 	}
 
-	.card p {
-		margin-top: 1rem;
-		padding: 1rem;
-		background-color: var(--primary);
-		color: whitesmoke;
+	.visi-misi h3,
+	.visi-misi h2 {
 		text-align: center;
-		border-radius: 5px;
-		cursor: pointer;
 	}
 
-	.card img {
+	.visi-misi article {
+		/* width: calc(50% - 1rem); */
+		margin: 0;
+		/* flex: 1 1 calc(50% - 1rem); */
+	}
+
+	.visi-misi .values {
+		width: 100%;
+	}
+
+	.teams {
+		--block-spacing-horizontal: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.teams hgroup {
+		text-align: center;
+	}
+
+	.teams .team-lists {
+		display: flex;
+	}
+
+	.teams .team-lists .team article {
+		--block-spacing-vertical: 0;
+		--block-spacing-horizontal: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.teams .team-lists .team article footer {
+		width: 100%;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.teams .team-lists .team .avatar {
 		border-radius: 100%;
-		width: 200px;
-		height: 200px;
-		cursor: pointer;
+		border: 1px solid var(--primary);
+		background-color: var(--ins-color);
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 
-	@media screen and (max-width: 992px) {
-		.title-container,
-		.title-container {
-			width: fit-content;
-		}
-		.container {
-			display: flex;
-			flex-direction: column;
-		}
+	span {
+		padding: 1rem;
+		color: salmon;
 	}
 </style>

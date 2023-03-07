@@ -1,5 +1,6 @@
 <script>
     // import '@picocss/pico';
+    import '../app.postcss';
     import '../app.scss';
     // import '../custom.css';
 </script>

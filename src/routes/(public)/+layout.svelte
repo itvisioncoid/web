@@ -200,6 +200,7 @@
 	}
 
 	.as-footer {
+		--grid-spacing-vertical: 1.5rem;
 		span {
 			color: var(--primary);
 		}

@@ -1,6 +1,7 @@
+import type { UserConfig } from 'vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 // import { defineConfig } from 'vitest/config';
-import type { UserConfig } from 'vite';
+import { imagetools } from "vite-imagetools";
 
 const config: UserConfig = {
 	logLevel: 'info',
@@ -9,7 +10,10 @@ const config: UserConfig = {
 		minify: true,
 	},
 	
-	plugins: [sveltekit()],
+	plugins: [
+		imagetools(),
+		sveltekit()
+	],
 	
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']

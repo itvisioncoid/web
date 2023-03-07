@@ -3,6 +3,7 @@
     --nav-background-color: var(--primary);
 
     .nav-container {
-        background-color: var(--nav-background-color);
+        // background-color: var(--nav-background-color);
+        border-bottom: 0.25rem solid var(--primary);
     }
 }

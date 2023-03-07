@@ -1,7 +1,7 @@
 {
 	"name": "itvision-website",
 	"description": "itvision.co.id",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"private": true,
 	"engines": {
 		"node": ">=16"

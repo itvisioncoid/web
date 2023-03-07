@@ -66,7 +66,7 @@
 				<p><b>CORE VALUES</b></p>
 				<p><b>Service Highlights We provide services to clients globally</b></p>
 			</div>
-			<div>
+			<div class="text-justify">
 				<p>
 					As an IT company, we cherish and hold ourselves responsible for the commitments we make to
 					our clients, including our capacity to provide cutting-edge technological solutions that

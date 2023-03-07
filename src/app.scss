@@ -9,19 +9,27 @@ $primary-700: #e64a19;
 // Breakpoints
 // 'null' disable the breakpoint
 $breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
 );
 
-body {
-    width: 100%;
-    margin: 0;
+@import "@picocss/pico/scss/pico";
+
+[data-theme=light], :root:not([data-theme=dark]) {
+	--card-box-shadow: 0 0 0.5rem rgb(27 40 50 / 2%), 0.033rem 0.06rem 0.4rem rgb(27 40 50 / 2%), 0 0 0 rgb(27 40 50 / 3%), 0 0 0 rgb(27 40 50 / 4%), 0 0 0 rgb(27 40 50 / 4%), 0rem 0rem 1rem rgb(27 40 50 / 6%), 0 0 0 0.0625rem rgb(27 40 50 / 2%)
 }
 
-@import "@picocss/pico/scss/pico";
+body {
+	width: 100%;
+	margin: 0;
+}
+
+dl, ul, ol {
+	padding-left: var(--spacing);
+}
 
 @import "theme-default";
 

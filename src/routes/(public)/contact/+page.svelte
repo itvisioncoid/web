@@ -34,19 +34,18 @@
 
 			<article>
 				<div class="form">
-					<form>
-						<label for="firstname">
-							<input type="text" id="firstname" name="firstname" placeholder="Your name" required />
-						</label>
+					<form method="post">
+						<label for="name">Your Name</label>
+						<input type="text" id="firstname" name="name" placeholder="Your name" required />						
 
 						<label for="email">Email address</label>
 						<input type="email" id="email" name="email" placeholder="Email address" required />
 						<small>We'll never share your email with anyone else.</small>
 
-						<label for="" />
-						<textarea name="" id="" cols="30" rows="3" />
+						<label for="message" >Message</label>
+						<textarea id="message" name="message" placeholder="Your message" cols="30" rows="3" />
 
-						<button type="submit">Send message</button>
+						<input role="button" type="submit" value="Send Message">
 					</form>
 				</div>
 			</article>

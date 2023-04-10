@@ -43,7 +43,7 @@
 		"typescript": "^4.9.3",
 		"vite": "^4.0.0",
 		"vite-imagetools": "^4.0.18",
-		"vitest": "^0.29.1"
+		"vitest": "^0.30.0"
 	},
 	"type": "module",
 	"repository": {

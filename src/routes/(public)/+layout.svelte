@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { base } from "$app/paths";
+	import { onMount } from "svelte";
+
 	const date = new Date();
 	let isDark: boolean;
 
@@ -32,14 +34,44 @@
 
 	function toggleDarkMode() {
 		const html: HTMLHtmlElement | null = document.querySelector('html');
+
 		if (html?.getAttribute('data-theme') == 'dark') {
 			html.setAttribute('data-theme', 'light');
 			isDark = false;
+      localStorage.setItem('itvision:theme', 'light');
 		} else {
-			html && html.setAttribute('data-theme', 'dark');
+			html?.setAttribute('data-theme', 'dark');
 			isDark = true;
+      localStorage.setItem('itvision:theme', 'dark');
 		}
 	}
+
+  function onSystemPreference() {
+		const html: HTMLHtmlElement | null = document.querySelector('html');
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    if (prefersDarkMode) {
+      html?.setAttribute('data-theme', 'dark');
+      isDark = true;
+      localStorage.setItem('itvision:theme', 'dark');
+    } else {
+      html?.setAttribute('data-theme', 'light');
+      isDark = false;
+      localStorage.setItem('itvision:theme', 'light');
+    }
+  }
+
+  onMount(() => {
+		const html: HTMLHtmlElement | null = document.querySelector('html');
+    const savedTheme = localStorage.getItem('itvision:theme');
+
+    if (savedTheme) {
+      html?.setAttribute('data-theme', savedTheme);
+      isDark = savedTheme === 'dark';
+    } else {
+      onSystemPreference()
+    }
+  })
 </script>
 
 <svelte:head>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { base } from "$app/paths";
-	import { onMount } from "svelte";
+	import { base } from '$app/paths';
+	import { onMount } from 'svelte';
 
 	const date = new Date();
 	let isDark: boolean;
@@ -38,40 +38,68 @@
 		if (html?.getAttribute('data-theme') == 'dark') {
 			html.setAttribute('data-theme', 'light');
 			isDark = false;
-      localStorage.setItem('itvision:theme', 'light');
+			localStorage.setItem(
+				'itvision:theme',
+				JSON.stringify({
+					preference: window.matchMedia('(prefers-color-scheme: light)').matches
+						? 'system'
+						: 'light',
+					current: 'light'
+				})
+			);
 		} else {
 			html?.setAttribute('data-theme', 'dark');
 			isDark = true;
-      localStorage.setItem('itvision:theme', 'dark');
+			localStorage.setItem(
+				'itvision:theme',
+				JSON.stringify({
+					preference: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'system' : 'dark',
+					current: 'dark'
+				})
+			);
 		}
 	}
 
-  function onSystemPreference() {
+	function onSystemPreference() {
 		const html: HTMLHtmlElement | null = document.querySelector('html');
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+		const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    if (prefersDarkMode) {
-      html?.setAttribute('data-theme', 'dark');
-      isDark = true;
-      localStorage.setItem('itvision:theme', 'dark');
-    } else {
-      html?.setAttribute('data-theme', 'light');
-      isDark = false;
-      localStorage.setItem('itvision:theme', 'light');
-    }
-  }
+		if (prefersDarkMode) {
+			html?.setAttribute('data-theme', 'dark');
+			isDark = true;
+			localStorage.setItem(
+				'itvision:theme',
+				JSON.stringify({
+					preference: 'system',
+					current: 'dark'
+				})
+			);
+		} else {
+			html?.setAttribute('data-theme', 'light');
+			isDark = false;
+			localStorage.setItem(
+				'itvision:theme',
+				JSON.stringify({
+					preference: 'system',
+					current: 'light'
+				})
+			);
+		}
+	}
 
-  onMount(() => {
+	onMount(() => {
 		const html: HTMLHtmlElement | null = document.querySelector('html');
-    const savedTheme = localStorage.getItem('itvision:theme');
+		const savedThemes = localStorage.getItem('itvision:theme');
 
-    if (savedTheme) {
-      html?.setAttribute('data-theme', savedTheme);
-      isDark = savedTheme === 'dark';
-    } else {
-      onSystemPreference()
-    }
-  })
+		if (savedThemes) {
+			const themes: App.Themes = JSON.parse(savedThemes);
+
+			html?.setAttribute('data-theme', themes.current);
+			isDark = themes.current === 'dark';
+		} else {
+			onSystemPreference();
+		}
+	});
 </script>
 
 <svelte:head>

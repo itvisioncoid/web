@@ -31,6 +31,11 @@ declare global {
 			}>>
 		}
 
+		interface Themes {
+			preference: string;
+			current: string;
+		}
+
 		// interface Locals {}
 		// interface PageData {}
 		// interface Platform {}

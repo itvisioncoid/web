@@ -1,22 +1,35 @@
 # Welcome to IT Vision Website Repository
-Deploy target: [https://itvision.co.id]()
 
-# Stacks
-* **Typescript**
-* [Svelte](https://svelte.dev)
-* [Svelte Kit](https://kit.svelte.dev)
-* [Pico CSS](https://picocss.com)
+Target Deployment: [IT Vision](https://itvision.co.id)
 
-# Development
-```sh
-# install dependencies
-> npm install
+## Technology Stack
 
-# serve local server
-> npm run dev
-# open http://localhost:5173 on your browser
+- [TypeScript](https://typescriptlang.org)
+- [Svelte](https://svelte.dev)
+- [Svelte Kit](https://kit.svelte.dev)
+- [Pico CSS](https://picocss.com)
 
-# make a change on .html files
-# it will automatic reload on the browser
+## Development Workflow
+
+### Setup
+
+```bash
+# Get started by installing project dependencies
+npm install
 ```
-Open dev page [http://localhost:5173]()
+
+### Local Development Server
+
+```bash
+# Kickstart your local development server
+npm run dev
+
+# Now, simply open your preferred web browser and navigate to http://localhost:5173
+```
+
+### Effortless Auto-Reloading
+
+- Make changes in your `.html` files.
+- Your adjustments will be instantly reflected in your browser without manual intervention.
+
+Dive into your development journey now and savor the seamless development experience!

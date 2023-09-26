@@ -1,9 +1,9 @@
 {
-    "editor.indentSize": "tabSize",
-    "files.exclude": {
-        "**/.svelte-kit": true,
-        "**/.vscode": true,
-        "**/node_modules": true
-    },
-    "explorer.sortOrder": "filesFirst"
+	"editor.indentSize": "tabSize",
+	"files.exclude": {
+		"**/.svelte-kit": true,
+		"**/.vscode": true,
+		"**/node_modules": true
+	},
+	"explorer.sortOrder": "filesFirst"
 }

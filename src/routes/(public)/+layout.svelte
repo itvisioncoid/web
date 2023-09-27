@@ -50,8 +50,8 @@
 	<nav class="container">
 		<ul>
 			<li>
-				<a href="{base ? base : '/'}" data-href="{base ? base : '/'}">
-					<img src="/logo.png" alt="Company logo" aria-label="Company logo" />
+				<a href="{base ? `${base}/` : '/'}" data-href="{base ? `${base}/` : '/'}">
+					<img src="./logo.png" alt="Company logo" aria-label="Company logo" />
 				</a>
 			</li>
 		</ul>

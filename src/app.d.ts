@@ -25,10 +25,12 @@ declare global {
 			picture?: string;
 			quotes?: string;
 			email: string;
-			urls?: Array<Record<{
-				icon: string,
-				url: string
-			}>>
+			urls?: Array<
+				Record<{
+					icon: string;
+					url: string;
+				}>
+			>;
 		}
 
 		// interface Locals {}

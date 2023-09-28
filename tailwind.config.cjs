@@ -3,7 +3,10 @@ const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		container: {
-			center: true
+			center: true,
+			padding: {
+				DEFAULT: '1rem'
+			}
 		},
 		screens: {
 			xs: '576px',

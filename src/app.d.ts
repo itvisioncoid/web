@@ -4,6 +4,7 @@ declare global {
 	namespace App {
 		interface Error {
 			code: string;
+			id: string;
 		}
 
 		interface ServiceHighlights {

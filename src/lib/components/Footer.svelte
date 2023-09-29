@@ -25,7 +25,11 @@
 	<div class="container flex flex-col mb-20 lg:flex-row">
 		<div class="mb-10 lg:w-1/2">
 			<a href="/">
-				<img class="mb-10 w-60" src="./logo.png" alt="Company logo" aria-label="Company logo" />
+				<img
+					src={'/logo.png' || './logo.png'}
+					alt="Company logo"
+					aria-label="Company logo"
+					class="mb-10 w-60" />
 			</a>
 			<div class="space-y-4 leading-relaxed">
 				<p>

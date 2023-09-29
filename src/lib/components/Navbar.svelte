@@ -36,7 +36,11 @@
 <nav class="absolute top-0 left-0 right-0 py-3 border-b-2 bg-background-50 border-primary-300">
 	<div class="container flex items-center justify-between">
 		<a href={base ? base : '/'} data-href={base ? base : '/'}>
-			<img src="./logo.png" alt="Company logo" aria-label="Company logo" class="w-36" />
+			<img
+				src={'/logo.png' || './logo.png'}
+				alt="Company logo"
+				aria-label="Company logo"
+				class="w-36" />
 		</a>
 		<div class="flex items-center gap-4 md:gap-8">
 			{#each menuLists as menu}

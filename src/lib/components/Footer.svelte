@@ -25,7 +25,7 @@
 	<div class="container flex flex-col mb-20 lg:flex-row">
 		<div class="mb-10 lg:w-1/2">
 			<a href="/">
-				<img class="w-60 mb-10" src="./logo.png" alt="Company logo" aria-label="Company logo" />
+				<img class="mb-10 w-60" src="./logo.png" alt="Company logo" aria-label="Company logo" />
 			</a>
 			<div class="space-y-4 leading-relaxed">
 				<p>
@@ -67,7 +67,7 @@
 			&copy; <a href="/" class="font-medium text-primary-500">CV. IT VISION</a>
 			{date.getFullYear()} All rights reserved.
 		</p>
-		<p class="text-primary-500 space-x-1">
+		<p class="space-x-1 text-primary-500">
 			<a href="/">Terms & Conditions</a>
 			<span class="text-text-800">&bull;</span>
 			<a href="/">Privacy Policy</a>

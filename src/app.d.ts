@@ -4,6 +4,7 @@ declare global {
 	namespace App {
 		interface Error {
 			code: string;
+			id: string;
 		}
 
 		interface ServiceHighlights {
@@ -25,10 +26,12 @@ declare global {
 			picture?: string;
 			quotes?: string;
 			email: string;
-			urls?: Array<Record<{
-				icon: string,
-				url: string
-			}>>
+			urls?: Array<
+				Record<{
+					icon: string;
+					url: string;
+				}>
+			>;
 		}
 
 		// interface Locals {}

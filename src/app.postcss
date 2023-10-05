@@ -1,4 +1,14 @@
+/* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind variants;
+
+@layer base {
+	html {
+		font-family: 'Roboto', sans-serif;
+		font-size: 17px;
+		position: relative;
+
+		@apply bg-background-50 text-text-800;
+	}
+}
